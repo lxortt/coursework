@@ -54,7 +54,7 @@ namespace coursework
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             MySqlCommand command = new MySqlCommand(sql, conn);
             command.Parameters.AddWithValue("@un", LoginField.Text);
-            command.Parameters.AddWithValue("@up", (PasswordField.Text));
+            command.Parameters.AddWithValue("@up", sha256(PasswordField.Text));
             adapter.SelectCommand = command;
             adapter.Fill(table);
             conn.Close();
@@ -109,5 +109,9 @@ namespace coursework
                 public static string Login = null;
            }
 
+        private void BodyPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

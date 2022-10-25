@@ -45,6 +45,18 @@ namespace coursework
             this.Close();
             new Thread(() => Application.Run(new Auth())).Start();
         }
+        private static string sha256(string randomString)
+        {
+            //Тут происходит криптографическая магия. Смысл данного метода заключается в том, что строка залетает в метод
+            var crypt = new System.Security.Cryptography.SHA256Managed();
+            var hash = new System.Text.StringBuilder();
+            byte[] crypto = crypt.ComputeHash(Encoding.UTF8.GetBytes(randomString));
+            foreach (byte theByte in crypto)
+            {
+                _ = hash.Append(theByte.ToString("x2"));
+            }
+            return hash.ToString();
+        }
         private void AuthLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
