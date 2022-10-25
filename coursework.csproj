@@ -96,6 +96,24 @@
     <Compile Include="Cars\Cars.Designer.cs">
       <DependentUpon>Cars.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clients\Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\Clients.Designer.cs">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreaofWork\AreaofWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaofWork\AreaofWork.Designer.cs">
+      <DependentUpon>AreaofWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insurance\Insurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insurance\Insurance.Designer.cs">
+      <DependentUpon>Insurance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,11 +128,20 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AreaofWork\AreaofWork.resx">
+      <DependentUpon>AreaofWork.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Auth.resx">
       <DependentUpon>Auth.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cars\Cars.resx">
       <DependentUpon>Cars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\Clients.resx">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insurance\Insurance.resx">
+      <DependentUpon>Insurance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -157,6 +184,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\UserReg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insurance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Work.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

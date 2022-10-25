@@ -83,6 +83,16 @@ namespace Course_work.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Insurance {
+            get {
+                object obj = ResourceManager.GetObject("Insurance", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap User {
             get {
                 object obj = ResourceManager.GetObject("User", resourceCulture);
@@ -96,6 +106,16 @@ namespace Course_work.Properties {
         internal static System.Drawing.Bitmap UserReg {
             get {
                 object obj = ResourceManager.GetObject("UserReg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Work {
+            get {
+                object obj = ResourceManager.GetObject("Work", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

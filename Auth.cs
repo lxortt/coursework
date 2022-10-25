@@ -21,7 +21,7 @@ namespace coursework
             KeyPreview = true;
             KeyDown += (s, e) =>
             {
-                if (e.KeyValue == (char)Keys.Enter) CreateLinkLabel_LinkClicked(buttonAuth, null);
+                //if (e.KeyValue == (char)Keys.Enter) CreateLinkLabel_LinkClicked(buttonAuth, null);
             };
         }
         public static class ConnToDB
@@ -54,22 +54,29 @@ namespace coursework
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             MySqlCommand command = new MySqlCommand(sql, conn);
             command.Parameters.AddWithValue("@un", LoginField.Text);
-            command.Parameters.AddWithValue("@up", sha256(PasswordField.Text));
+            command.Parameters.AddWithValue("@up", (PasswordField.Text));
             adapter.SelectCommand = command;
             adapter.Fill(table);
             conn.Close();
             if (table.Rows.Count > 0)
             {
+                Auth1.auth = true;
                 GetUserInfo(LoginField.Text);
+                conn.Open();
+                string sql1 = $"SELECT ID FROM Users WHERE Login='{LoginField.Text}'";
+                MySqlCommand command1 = new MySqlCommand(sql1, conn);
+                string ID = command1.ExecuteScalar().ToString();
+                conn.Close();
                 this.Close();
                 new Thread(() => Application.Run(new Menu())).Start();
             }
             else
             {
                 MessageBox.Show("Ошибка авторизации.\r\nВход в программу не был произведён. Возможно, вы ввели неверное имя пользователя или пароль.");
+                PasswordField.Clear();
             }
         }
-         static string sha256(string randomString)
+         private static string sha256(string randomString)
             {
                 //Тут происходит криптографическая магия. Смысл данного метода заключается в том, что строка залетает в метод
                 var crypt = new System.Security.Cryptography.SHA256Managed();
@@ -84,7 +91,7 @@ namespace coursework
          public void GetUserInfo(string Login)
             {
                 //Объявлем переменную для запроса в БД
-                var selected_id_stud = LoginField.Text;
+                _ = LoginField.Text;
                 // устанавливаем соединение с БД
                 conn.Open();
                 // запрос
@@ -96,22 +103,18 @@ namespace coursework
                 // читаем результат
                 while (reader.Read())
                 {
-                    Auth1.ID = reader[0].ToString();
-                    Auth1.Login = reader[1].ToString();
+                Auth1.ID = reader[0].ToString();
+                Auth1.Login = reader[1].ToString();
                 }
                 reader.Close(); // закрываем reader
                 conn.Close();// закрываем соединение с БД
 
             }
-         static class Auth1
-            {
+         public static class Auth1
+           {
+                public static bool auth = false;
                 public static string ID = null;
                 public static string Login = null;
-           }
-
-        private void BodyPanel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

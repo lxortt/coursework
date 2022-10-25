@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cars));
             this.BodyPanel = new System.Windows.Forms.Panel();
+            this.CancelButton = new System.Windows.Forms.Button();
+            this.CarsPicture = new System.Windows.Forms.PictureBox();
+            this.LeftPanel = new System.Windows.Forms.Panel();
+            this.EngineNumberLabel = new System.Windows.Forms.Label();
+            this.TechnicalCertificateLabel = new System.Windows.Forms.Label();
             this.VehicleYearLabel = new System.Windows.Forms.Label();
             this.CarColorLabel = new System.Windows.Forms.Label();
             this.EngineNumberField = new System.Windows.Forms.TextBox();
@@ -41,11 +46,6 @@
             this.TechnicalCertificateField = new System.Windows.Forms.TextBox();
             this.VINField = new System.Windows.Forms.TextBox();
             this.MachineBrandField = new System.Windows.Forms.TextBox();
-            this.CarsPicture = new System.Windows.Forms.PictureBox();
-            this.TechnicalCertificateLabel = new System.Windows.Forms.Label();
-            this.EngineNumberLabel = new System.Windows.Forms.Label();
-            this.LeftPanel = new System.Windows.Forms.Panel();
-            this.CancelButton = new System.Windows.Forms.Button();
             this.BodyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CarsPicture)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +74,71 @@
             this.BodyPanel.Name = "BodyPanel";
             this.BodyPanel.Size = new System.Drawing.Size(800, 450);
             this.BodyPanel.TabIndex = 3;
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.BackColor = System.Drawing.Color.Transparent;
+            this.CancelButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CancelButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CancelButton.FlatAppearance.BorderSize = 0;
+            this.CancelButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
+            this.CancelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
+            this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CancelButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CancelButton.ForeColor = System.Drawing.Color.OrangeRed;
+            this.CancelButton.Location = new System.Drawing.Point(256, 391);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(187, 23);
+            this.CancelButton.TabIndex = 22;
+            this.CancelButton.Text = "Отмена";
+            this.CancelButton.UseVisualStyleBackColor = false;
+            // 
+            // CarsPicture
+            // 
+            this.CarsPicture.BackColor = System.Drawing.Color.Transparent;
+            this.CarsPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CarsPicture.ErrorImage = null;
+            this.CarsPicture.Image = global::Course_work.Properties.Resources.Car;
+            this.CarsPicture.InitialImage = null;
+            this.CarsPicture.Location = new System.Drawing.Point(514, 55);
+            this.CarsPicture.Name = "CarsPicture";
+            this.CarsPicture.Size = new System.Drawing.Size(256, 256);
+            this.CarsPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CarsPicture.TabIndex = 3;
+            this.CarsPicture.TabStop = false;
+            // 
+            // LeftPanel
+            // 
+            this.LeftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(26)))), ((int)(((byte)(33)))));
+            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LeftPanel.Location = new System.Drawing.Point(0, 0);
+            this.LeftPanel.Name = "LeftPanel";
+            this.LeftPanel.Size = new System.Drawing.Size(95, 450);
+            this.LeftPanel.TabIndex = 20;
+            // 
+            // EngineNumberLabel
+            // 
+            this.EngineNumberLabel.AutoSize = true;
+            this.EngineNumberLabel.BackColor = System.Drawing.Color.Transparent;
+            this.EngineNumberLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EngineNumberLabel.ForeColor = System.Drawing.Color.Violet;
+            this.EngineNumberLabel.Location = new System.Drawing.Point(116, 290);
+            this.EngineNumberLabel.Name = "EngineNumberLabel";
+            this.EngineNumberLabel.Size = new System.Drawing.Size(124, 16);
+            this.EngineNumberLabel.TabIndex = 19;
+            this.EngineNumberLabel.Text = "Номер двигателя";
+            // 
+            // TechnicalCertificateLabel
+            // 
+            this.TechnicalCertificateLabel.AutoSize = true;
+            this.TechnicalCertificateLabel.BackColor = System.Drawing.Color.Transparent;
+            this.TechnicalCertificateLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TechnicalCertificateLabel.ForeColor = System.Drawing.Color.MediumPurple;
+            this.TechnicalCertificateLabel.Location = new System.Drawing.Point(151, 143);
+            this.TechnicalCertificateLabel.Name = "TechnicalCertificateLabel";
+            this.TechnicalCertificateLabel.Size = new System.Drawing.Size(89, 16);
+            this.TechnicalCertificateLabel.TabIndex = 18;
+            this.TechnicalCertificateLabel.Text = "Тех.Паспорт";
             // 
             // VehicleYearLabel
             // 
@@ -194,71 +259,6 @@
             this.MachineBrandField.Name = "MachineBrandField";
             this.MachineBrandField.Size = new System.Drawing.Size(187, 21);
             this.MachineBrandField.TabIndex = 4;
-            // 
-            // CarsPicture
-            // 
-            this.CarsPicture.BackColor = System.Drawing.Color.Transparent;
-            this.CarsPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CarsPicture.ErrorImage = null;
-            this.CarsPicture.Image = global::Course_work.Properties.Resources.Car;
-            this.CarsPicture.InitialImage = null;
-            this.CarsPicture.Location = new System.Drawing.Point(501, 3);
-            this.CarsPicture.Name = "CarsPicture";
-            this.CarsPicture.Size = new System.Drawing.Size(256, 256);
-            this.CarsPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.CarsPicture.TabIndex = 3;
-            this.CarsPicture.TabStop = false;
-            // 
-            // TechnicalCertificateLabel
-            // 
-            this.TechnicalCertificateLabel.AutoSize = true;
-            this.TechnicalCertificateLabel.BackColor = System.Drawing.Color.Transparent;
-            this.TechnicalCertificateLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TechnicalCertificateLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.TechnicalCertificateLabel.Location = new System.Drawing.Point(151, 143);
-            this.TechnicalCertificateLabel.Name = "TechnicalCertificateLabel";
-            this.TechnicalCertificateLabel.Size = new System.Drawing.Size(89, 16);
-            this.TechnicalCertificateLabel.TabIndex = 18;
-            this.TechnicalCertificateLabel.Text = "Тех.Паспорт";
-            // 
-            // EngineNumberLabel
-            // 
-            this.EngineNumberLabel.AutoSize = true;
-            this.EngineNumberLabel.BackColor = System.Drawing.Color.Transparent;
-            this.EngineNumberLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EngineNumberLabel.ForeColor = System.Drawing.Color.Violet;
-            this.EngineNumberLabel.Location = new System.Drawing.Point(116, 290);
-            this.EngineNumberLabel.Name = "EngineNumberLabel";
-            this.EngineNumberLabel.Size = new System.Drawing.Size(124, 16);
-            this.EngineNumberLabel.TabIndex = 19;
-            this.EngineNumberLabel.Text = "Номер двигателя";
-            // 
-            // LeftPanel
-            // 
-            this.LeftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(26)))), ((int)(((byte)(33)))));
-            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LeftPanel.Location = new System.Drawing.Point(0, 0);
-            this.LeftPanel.Name = "LeftPanel";
-            this.LeftPanel.Size = new System.Drawing.Size(95, 450);
-            this.LeftPanel.TabIndex = 20;
-            // 
-            // CancelButton
-            // 
-            this.CancelButton.BackColor = System.Drawing.Color.Transparent;
-            this.CancelButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CancelButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CancelButton.FlatAppearance.BorderSize = 0;
-            this.CancelButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.CancelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CancelButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CancelButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.CancelButton.Location = new System.Drawing.Point(256, 391);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(187, 23);
-            this.CancelButton.TabIndex = 22;
-            this.CancelButton.Text = "Отмена";
-            this.CancelButton.UseVisualStyleBackColor = false;
             // 
             // Cars
             // 

@@ -111,7 +111,6 @@
             this.BodyPanel.Name = "BodyPanel";
             this.BodyPanel.Size = new System.Drawing.Size(334, 346);
             this.BodyPanel.TabIndex = 0;
-            this.BodyPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.BodyPanel_Paint);
             // 
             // CreateLinkLabel
             // 
