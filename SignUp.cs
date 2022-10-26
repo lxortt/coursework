@@ -27,7 +27,7 @@ namespace coursework
         private void CreateButton_Click(object sender, EventArgs e)
         {
             string Login = LoginField.Text;
-            string Password = PasswordField.Text;
+            string Password = sha256 (PasswordField.Text);
             string Mail = MailField.Text;
             string Phone = PhoneField.Text;
             string sql_update_current_account = $"INSERT INTO Users (Login, Password, Mail, Phone) " +

@@ -120,6 +120,12 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal.Designer.cs">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.cs">
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal.resx">
+      <DependentUpon>Personal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -190,6 +199,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Work.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconService.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarService.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarService1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Personal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Personal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

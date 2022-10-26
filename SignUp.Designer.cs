@@ -259,8 +259,9 @@
             this.Controls.Add(this.BodyPanel);
             this.Controls.Add(this.HeaderPanel);
             this.Controls.Add(this.FooterPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SignUp";
-            this.Text = "Form1";
+            this.Text = "SignUp";
             this.Load += new System.EventHandler(this.SignUp_Load);
             this.FooterPanel.ResumeLayout(false);
             this.FooterPanel.PerformLayout();

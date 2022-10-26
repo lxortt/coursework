@@ -46,6 +46,7 @@
             this.InsuranceCompanyField = new System.Windows.Forms.TextBox();
             this.InsurancePolicyField = new System.Windows.Forms.TextBox();
             this.FIOField = new System.Windows.Forms.TextBox();
+            this.InsuranceLabel = new System.Windows.Forms.Label();
             this.BodyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InsurancePicture)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +54,7 @@
             // BodyPanel
             // 
             this.BodyPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BodyPanel.BackgroundImage")));
+            this.BodyPanel.Controls.Add(this.InsuranceLabel);
             this.BodyPanel.Controls.Add(this.CancelButton);
             this.BodyPanel.Controls.Add(this.InsurancePicture);
             this.BodyPanel.Controls.Add(this.LeftPanel);
@@ -86,7 +88,7 @@
             this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CancelButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.CancelButton.Location = new System.Drawing.Point(256, 391);
+            this.CancelButton.Location = new System.Drawing.Point(256, 412);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(187, 23);
             this.CancelButton.TabIndex = 22;
@@ -123,7 +125,7 @@
             this.TermOfInsuranceLabel.BackColor = System.Drawing.Color.Transparent;
             this.TermOfInsuranceLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TermOfInsuranceLabel.ForeColor = System.Drawing.Color.Violet;
-            this.TermOfInsuranceLabel.Location = new System.Drawing.Point(112, 290);
+            this.TermOfInsuranceLabel.Location = new System.Drawing.Point(124, 311);
             this.TermOfInsuranceLabel.Name = "TermOfInsuranceLabel";
             this.TermOfInsuranceLabel.Size = new System.Drawing.Size(127, 16);
             this.TermOfInsuranceLabel.TabIndex = 19;
@@ -135,7 +137,7 @@
             this.InsuranceCompanyLabel.BackColor = System.Drawing.Color.Transparent;
             this.InsuranceCompanyLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.InsuranceCompanyLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.InsuranceCompanyLabel.Location = new System.Drawing.Point(93, 139);
+            this.InsuranceCompanyLabel.Location = new System.Drawing.Point(105, 160);
             this.InsuranceCompanyLabel.Name = "InsuranceCompanyLabel";
             this.InsuranceCompanyLabel.Size = new System.Drawing.Size(146, 16);
             this.InsuranceCompanyLabel.TabIndex = 18;
@@ -147,7 +149,7 @@
             this.DateOfInsuranceLabel.BackColor = System.Drawing.Color.Transparent;
             this.DateOfInsuranceLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DateOfInsuranceLabel.ForeColor = System.Drawing.Color.Violet;
-            this.DateOfInsuranceLabel.Location = new System.Drawing.Point(111, 239);
+            this.DateOfInsuranceLabel.Location = new System.Drawing.Point(123, 260);
             this.DateOfInsuranceLabel.Name = "DateOfInsuranceLabel";
             this.DateOfInsuranceLabel.Size = new System.Drawing.Size(128, 16);
             this.DateOfInsuranceLabel.TabIndex = 16;
@@ -159,7 +161,7 @@
             this.InsuranceTypeLabel.BackColor = System.Drawing.Color.Transparent;
             this.InsuranceTypeLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.InsuranceTypeLabel.ForeColor = System.Drawing.Color.Violet;
-            this.InsuranceTypeLabel.Location = new System.Drawing.Point(120, 189);
+            this.InsuranceTypeLabel.Location = new System.Drawing.Point(132, 210);
             this.InsuranceTypeLabel.Name = "InsuranceTypeLabel";
             this.InsuranceTypeLabel.Size = new System.Drawing.Size(119, 16);
             this.InsuranceTypeLabel.TabIndex = 15;
@@ -169,7 +171,7 @@
             // 
             this.TermOfInsuranceField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.TermOfInsuranceField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TermOfInsuranceField.Location = new System.Drawing.Point(256, 290);
+            this.TermOfInsuranceField.Location = new System.Drawing.Point(268, 311);
             this.TermOfInsuranceField.Name = "TermOfInsuranceField";
             this.TermOfInsuranceField.Size = new System.Drawing.Size(187, 21);
             this.TermOfInsuranceField.TabIndex = 14;
@@ -178,7 +180,7 @@
             // 
             this.DateOfInsuranceField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.DateOfInsuranceField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.DateOfInsuranceField.Location = new System.Drawing.Point(256, 238);
+            this.DateOfInsuranceField.Location = new System.Drawing.Point(268, 259);
             this.DateOfInsuranceField.Name = "DateOfInsuranceField";
             this.DateOfInsuranceField.Size = new System.Drawing.Size(187, 21);
             this.DateOfInsuranceField.TabIndex = 13;
@@ -193,7 +195,7 @@
             this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.AddButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.AddButton.Location = new System.Drawing.Point(256, 346);
+            this.AddButton.Location = new System.Drawing.Point(268, 367);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(187, 23);
             this.AddButton.TabIndex = 12;
@@ -207,7 +209,7 @@
             this.InsurancePolicyLabel.BackColor = System.Drawing.Color.Transparent;
             this.InsurancePolicyLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.InsurancePolicyLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.InsurancePolicyLabel.Location = new System.Drawing.Point(120, 88);
+            this.InsurancePolicyLabel.Location = new System.Drawing.Point(132, 109);
             this.InsurancePolicyLabel.Name = "InsurancePolicyLabel";
             this.InsurancePolicyLabel.Size = new System.Drawing.Size(119, 16);
             this.InsurancePolicyLabel.TabIndex = 10;
@@ -219,7 +221,7 @@
             this.FIOLabel.BackColor = System.Drawing.Color.Transparent;
             this.FIOLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FIOLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.FIOLabel.Location = new System.Drawing.Point(198, 39);
+            this.FIOLabel.Location = new System.Drawing.Point(210, 60);
             this.FIOLabel.Name = "FIOLabel";
             this.FIOLabel.Size = new System.Drawing.Size(35, 16);
             this.FIOLabel.TabIndex = 8;
@@ -229,7 +231,7 @@
             // 
             this.InsuranceTypeField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.InsuranceTypeField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.InsuranceTypeField.Location = new System.Drawing.Point(256, 188);
+            this.InsuranceTypeField.Location = new System.Drawing.Point(268, 209);
             this.InsuranceTypeField.Name = "InsuranceTypeField";
             this.InsuranceTypeField.Size = new System.Drawing.Size(187, 21);
             this.InsuranceTypeField.TabIndex = 7;
@@ -238,7 +240,7 @@
             // 
             this.InsuranceCompanyField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.InsuranceCompanyField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.InsuranceCompanyField.Location = new System.Drawing.Point(256, 138);
+            this.InsuranceCompanyField.Location = new System.Drawing.Point(268, 159);
             this.InsuranceCompanyField.Name = "InsuranceCompanyField";
             this.InsuranceCompanyField.Size = new System.Drawing.Size(187, 21);
             this.InsuranceCompanyField.TabIndex = 6;
@@ -247,7 +249,7 @@
             // 
             this.InsurancePolicyField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.InsurancePolicyField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.InsurancePolicyField.Location = new System.Drawing.Point(256, 87);
+            this.InsurancePolicyField.Location = new System.Drawing.Point(268, 108);
             this.InsurancePolicyField.Name = "InsurancePolicyField";
             this.InsurancePolicyField.Size = new System.Drawing.Size(187, 21);
             this.InsurancePolicyField.TabIndex = 5;
@@ -256,10 +258,23 @@
             // 
             this.FIOField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.FIOField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.FIOField.Location = new System.Drawing.Point(256, 34);
+            this.FIOField.Location = new System.Drawing.Point(268, 55);
             this.FIOField.Name = "FIOField";
             this.FIOField.Size = new System.Drawing.Size(187, 21);
             this.FIOField.TabIndex = 4;
+            // 
+            // InsuranceLabel
+            // 
+            this.InsuranceLabel.AutoSize = true;
+            this.InsuranceLabel.BackColor = System.Drawing.Color.Transparent;
+            this.InsuranceLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.InsuranceLabel.ForeColor = System.Drawing.Color.White;
+            this.InsuranceLabel.Location = new System.Drawing.Point(122, 19);
+            this.InsuranceLabel.Name = "InsuranceLabel";
+            this.InsuranceLabel.Size = new System.Drawing.Size(529, 19);
+            this.InsuranceLabel.TabIndex = 23;
+            this.InsuranceLabel.Text = "Для внесения данных в таблицу заполните следующие поля:";
+            this.InsuranceLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Insurance
             // 
@@ -267,6 +282,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BodyPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Insurance";
             this.Text = "Insurance";
             this.Load += new System.EventHandler(this.Insurance_Load);
@@ -280,7 +296,7 @@
         #endregion
 
         private System.Windows.Forms.Panel BodyPanel;
-        private System.Windows.Forms.Button CancelButton;
+        private new System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.PictureBox InsurancePicture;
         private System.Windows.Forms.Panel LeftPanel;
         private System.Windows.Forms.Label TermOfInsuranceLabel;
@@ -296,5 +312,6 @@
         private System.Windows.Forms.TextBox InsuranceCompanyField;
         private System.Windows.Forms.TextBox InsurancePolicyField;
         private System.Windows.Forms.TextBox FIOField;
+        private System.Windows.Forms.Label InsuranceLabel;
     }
 }

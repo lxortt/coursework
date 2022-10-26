@@ -46,6 +46,7 @@
             this.TechnicalCertificateField = new System.Windows.Forms.TextBox();
             this.VINField = new System.Windows.Forms.TextBox();
             this.MachineBrandField = new System.Windows.Forms.TextBox();
+            this.CarsLabel = new System.Windows.Forms.Label();
             this.BodyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CarsPicture)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +54,7 @@
             // BodyPanel
             // 
             this.BodyPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BodyPanel.BackgroundImage")));
+            this.BodyPanel.Controls.Add(this.CarsLabel);
             this.BodyPanel.Controls.Add(this.CancelButton);
             this.BodyPanel.Controls.Add(this.CarsPicture);
             this.BodyPanel.Controls.Add(this.LeftPanel);
@@ -86,7 +88,7 @@
             this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CancelButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.CancelButton.Location = new System.Drawing.Point(256, 391);
+            this.CancelButton.Location = new System.Drawing.Point(259, 412);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(187, 23);
             this.CancelButton.TabIndex = 22;
@@ -122,7 +124,7 @@
             this.EngineNumberLabel.BackColor = System.Drawing.Color.Transparent;
             this.EngineNumberLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EngineNumberLabel.ForeColor = System.Drawing.Color.Violet;
-            this.EngineNumberLabel.Location = new System.Drawing.Point(116, 290);
+            this.EngineNumberLabel.Location = new System.Drawing.Point(119, 311);
             this.EngineNumberLabel.Name = "EngineNumberLabel";
             this.EngineNumberLabel.Size = new System.Drawing.Size(124, 16);
             this.EngineNumberLabel.TabIndex = 19;
@@ -134,7 +136,7 @@
             this.TechnicalCertificateLabel.BackColor = System.Drawing.Color.Transparent;
             this.TechnicalCertificateLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TechnicalCertificateLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.TechnicalCertificateLabel.Location = new System.Drawing.Point(151, 143);
+            this.TechnicalCertificateLabel.Location = new System.Drawing.Point(154, 164);
             this.TechnicalCertificateLabel.Name = "TechnicalCertificateLabel";
             this.TechnicalCertificateLabel.Size = new System.Drawing.Size(89, 16);
             this.TechnicalCertificateLabel.TabIndex = 18;
@@ -146,7 +148,7 @@
             this.VehicleYearLabel.BackColor = System.Drawing.Color.Transparent;
             this.VehicleYearLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.VehicleYearLabel.ForeColor = System.Drawing.Color.Violet;
-            this.VehicleYearLabel.Location = new System.Drawing.Point(147, 239);
+            this.VehicleYearLabel.Location = new System.Drawing.Point(150, 260);
             this.VehicleYearLabel.Name = "VehicleYearLabel";
             this.VehicleYearLabel.Size = new System.Drawing.Size(93, 16);
             this.VehicleYearLabel.TabIndex = 16;
@@ -158,7 +160,7 @@
             this.CarColorLabel.BackColor = System.Drawing.Color.Transparent;
             this.CarColorLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CarColorLabel.ForeColor = System.Drawing.Color.Violet;
-            this.CarColorLabel.Location = new System.Drawing.Point(200, 189);
+            this.CarColorLabel.Location = new System.Drawing.Point(203, 210);
             this.CarColorLabel.Name = "CarColorLabel";
             this.CarColorLabel.Size = new System.Drawing.Size(40, 16);
             this.CarColorLabel.TabIndex = 15;
@@ -168,7 +170,7 @@
             // 
             this.EngineNumberField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.EngineNumberField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.EngineNumberField.Location = new System.Drawing.Point(256, 290);
+            this.EngineNumberField.Location = new System.Drawing.Point(259, 311);
             this.EngineNumberField.Name = "EngineNumberField";
             this.EngineNumberField.Size = new System.Drawing.Size(187, 21);
             this.EngineNumberField.TabIndex = 14;
@@ -177,7 +179,7 @@
             // 
             this.VehicleYearField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.VehicleYearField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.VehicleYearField.Location = new System.Drawing.Point(256, 238);
+            this.VehicleYearField.Location = new System.Drawing.Point(259, 259);
             this.VehicleYearField.Name = "VehicleYearField";
             this.VehicleYearField.Size = new System.Drawing.Size(187, 21);
             this.VehicleYearField.TabIndex = 13;
@@ -192,7 +194,7 @@
             this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.AddButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.AddButton.Location = new System.Drawing.Point(256, 346);
+            this.AddButton.Location = new System.Drawing.Point(259, 367);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(187, 23);
             this.AddButton.TabIndex = 12;
@@ -206,7 +208,7 @@
             this.VINLabel.BackColor = System.Drawing.Color.Transparent;
             this.VINLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.VINLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.VINLabel.Location = new System.Drawing.Point(211, 92);
+            this.VINLabel.Location = new System.Drawing.Point(214, 113);
             this.VINLabel.Name = "VINLabel";
             this.VINLabel.Size = new System.Drawing.Size(29, 16);
             this.VINLabel.TabIndex = 10;
@@ -218,7 +220,7 @@
             this.MachineBrandLabel.BackColor = System.Drawing.Color.Transparent;
             this.MachineBrandLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MachineBrandLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.MachineBrandLabel.Location = new System.Drawing.Point(171, 39);
+            this.MachineBrandLabel.Location = new System.Drawing.Point(174, 60);
             this.MachineBrandLabel.Name = "MachineBrandLabel";
             this.MachineBrandLabel.Size = new System.Drawing.Size(69, 16);
             this.MachineBrandLabel.TabIndex = 8;
@@ -228,7 +230,7 @@
             // 
             this.CarColorField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.CarColorField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.CarColorField.Location = new System.Drawing.Point(256, 188);
+            this.CarColorField.Location = new System.Drawing.Point(259, 209);
             this.CarColorField.Name = "CarColorField";
             this.CarColorField.Size = new System.Drawing.Size(187, 21);
             this.CarColorField.TabIndex = 7;
@@ -237,7 +239,7 @@
             // 
             this.TechnicalCertificateField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.TechnicalCertificateField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TechnicalCertificateField.Location = new System.Drawing.Point(256, 138);
+            this.TechnicalCertificateField.Location = new System.Drawing.Point(259, 159);
             this.TechnicalCertificateField.Name = "TechnicalCertificateField";
             this.TechnicalCertificateField.Size = new System.Drawing.Size(187, 21);
             this.TechnicalCertificateField.TabIndex = 6;
@@ -246,7 +248,7 @@
             // 
             this.VINField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.VINField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.VINField.Location = new System.Drawing.Point(256, 87);
+            this.VINField.Location = new System.Drawing.Point(259, 108);
             this.VINField.Name = "VINField";
             this.VINField.Size = new System.Drawing.Size(187, 21);
             this.VINField.TabIndex = 5;
@@ -255,10 +257,23 @@
             // 
             this.MachineBrandField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.MachineBrandField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.MachineBrandField.Location = new System.Drawing.Point(256, 34);
+            this.MachineBrandField.Location = new System.Drawing.Point(259, 55);
             this.MachineBrandField.Name = "MachineBrandField";
             this.MachineBrandField.Size = new System.Drawing.Size(187, 21);
             this.MachineBrandField.TabIndex = 4;
+            // 
+            // CarsLabel
+            // 
+            this.CarsLabel.AutoSize = true;
+            this.CarsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.CarsLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CarsLabel.ForeColor = System.Drawing.Color.White;
+            this.CarsLabel.Location = new System.Drawing.Point(118, 21);
+            this.CarsLabel.Name = "CarsLabel";
+            this.CarsLabel.Size = new System.Drawing.Size(529, 19);
+            this.CarsLabel.TabIndex = 23;
+            this.CarsLabel.Text = "Для внесения данных в таблицу заполните следующие поля:";
+            this.CarsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Cars
             // 
@@ -267,6 +282,7 @@
             this.BackgroundImage = global::Course_work.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BodyPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Cars";
             this.Text = "Cars";
             this.Load += new System.EventHandler(this.Cars_Load);
@@ -294,6 +310,7 @@
         private System.Windows.Forms.Label EngineNumberLabel;
         private System.Windows.Forms.Label TechnicalCertificateLabel;
         private System.Windows.Forms.Panel LeftPanel;
-        private System.Windows.Forms.Button CancelButton;
+        private new System.Windows.Forms.Button CancelButton;
+        private System.Windows.Forms.Label CarsLabel;
     }
 }

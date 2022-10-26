@@ -212,8 +212,9 @@
             this.Controls.Add(this.BodyPanel);
             this.Controls.Add(this.FooterPanel);
             this.Controls.Add(this.HeaderPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Auth";
-            this.Text = "Form2";
+            this.Text = "Auth";
             this.FooterPanel.ResumeLayout(false);
             this.FooterPanel.PerformLayout();
             this.HeaderPanel.ResumeLayout(false);

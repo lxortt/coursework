@@ -44,6 +44,7 @@
             this.InsurancePaymentField = new System.Windows.Forms.TextBox();
             this.CostOfWorkField = new System.Windows.Forms.TextBox();
             this.TypeOfWorkField = new System.Windows.Forms.TextBox();
+            this.AreaOfWorkLabel = new System.Windows.Forms.Label();
             this.BodyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WorkPicture)).BeginInit();
             this.SuspendLayout();
@@ -51,6 +52,7 @@
             // BodyPanel
             // 
             this.BodyPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BodyPanel.BackgroundImage")));
+            this.BodyPanel.Controls.Add(this.AreaOfWorkLabel);
             this.BodyPanel.Controls.Add(this.CancelButton);
             this.BodyPanel.Controls.Add(this.WorkPicture);
             this.BodyPanel.Controls.Add(this.LeftPanel);
@@ -82,7 +84,7 @@
             this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CancelButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.CancelButton.Location = new System.Drawing.Point(256, 336);
+            this.CancelButton.Location = new System.Drawing.Point(260, 357);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(187, 23);
             this.CancelButton.TabIndex = 22;
@@ -119,7 +121,7 @@
             this.InsurancePaymentLabel.BackColor = System.Drawing.Color.Transparent;
             this.InsurancePaymentLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.InsurancePaymentLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.InsurancePaymentLabel.Location = new System.Drawing.Point(101, 139);
+            this.InsurancePaymentLabel.Location = new System.Drawing.Point(105, 160);
             this.InsurancePaymentLabel.Name = "InsurancePaymentLabel";
             this.InsurancePaymentLabel.Size = new System.Drawing.Size(140, 16);
             this.InsurancePaymentLabel.TabIndex = 18;
@@ -131,7 +133,7 @@
             this.ApprovalDateLabel.BackColor = System.Drawing.Color.Transparent;
             this.ApprovalDateLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ApprovalDateLabel.ForeColor = System.Drawing.Color.Violet;
-            this.ApprovalDateLabel.Location = new System.Drawing.Point(126, 239);
+            this.ApprovalDateLabel.Location = new System.Drawing.Point(130, 260);
             this.ApprovalDateLabel.Name = "ApprovalDateLabel";
             this.ApprovalDateLabel.Size = new System.Drawing.Size(115, 16);
             this.ApprovalDateLabel.TabIndex = 16;
@@ -143,7 +145,7 @@
             this.DeadlineLabel.BackColor = System.Drawing.Color.Transparent;
             this.DeadlineLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DeadlineLabel.ForeColor = System.Drawing.Color.Violet;
-            this.DeadlineLabel.Location = new System.Drawing.Point(115, 189);
+            this.DeadlineLabel.Location = new System.Drawing.Point(119, 210);
             this.DeadlineLabel.Name = "DeadlineLabel";
             this.DeadlineLabel.Size = new System.Drawing.Size(126, 16);
             this.DeadlineLabel.TabIndex = 15;
@@ -153,7 +155,7 @@
             // 
             this.ApprovalDateField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.ApprovalDateField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ApprovalDateField.Location = new System.Drawing.Point(256, 238);
+            this.ApprovalDateField.Location = new System.Drawing.Point(260, 259);
             this.ApprovalDateField.Name = "ApprovalDateField";
             this.ApprovalDateField.Size = new System.Drawing.Size(187, 21);
             this.ApprovalDateField.TabIndex = 13;
@@ -168,7 +170,7 @@
             this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.AddButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.AddButton.Location = new System.Drawing.Point(256, 288);
+            this.AddButton.Location = new System.Drawing.Point(260, 309);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(187, 23);
             this.AddButton.TabIndex = 12;
@@ -182,7 +184,7 @@
             this.CostOfWorkLabel.BackColor = System.Drawing.Color.Transparent;
             this.CostOfWorkLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CostOfWorkLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.CostOfWorkLabel.Location = new System.Drawing.Point(111, 92);
+            this.CostOfWorkLabel.Location = new System.Drawing.Point(115, 113);
             this.CostOfWorkLabel.Name = "CostOfWorkLabel";
             this.CostOfWorkLabel.Size = new System.Drawing.Size(130, 16);
             this.CostOfWorkLabel.TabIndex = 10;
@@ -194,7 +196,7 @@
             this.TypeOfWorkLabel.BackColor = System.Drawing.Color.Transparent;
             this.TypeOfWorkLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TypeOfWorkLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.TypeOfWorkLabel.Location = new System.Drawing.Point(156, 39);
+            this.TypeOfWorkLabel.Location = new System.Drawing.Point(160, 60);
             this.TypeOfWorkLabel.Name = "TypeOfWorkLabel";
             this.TypeOfWorkLabel.Size = new System.Drawing.Size(85, 16);
             this.TypeOfWorkLabel.TabIndex = 8;
@@ -204,7 +206,7 @@
             // 
             this.DeadlineField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.DeadlineField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.DeadlineField.Location = new System.Drawing.Point(256, 188);
+            this.DeadlineField.Location = new System.Drawing.Point(260, 209);
             this.DeadlineField.Name = "DeadlineField";
             this.DeadlineField.Size = new System.Drawing.Size(187, 21);
             this.DeadlineField.TabIndex = 7;
@@ -213,7 +215,7 @@
             // 
             this.InsurancePaymentField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.InsurancePaymentField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.InsurancePaymentField.Location = new System.Drawing.Point(256, 138);
+            this.InsurancePaymentField.Location = new System.Drawing.Point(260, 159);
             this.InsurancePaymentField.Name = "InsurancePaymentField";
             this.InsurancePaymentField.Size = new System.Drawing.Size(187, 21);
             this.InsurancePaymentField.TabIndex = 6;
@@ -222,7 +224,7 @@
             // 
             this.CostOfWorkField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.CostOfWorkField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.CostOfWorkField.Location = new System.Drawing.Point(256, 87);
+            this.CostOfWorkField.Location = new System.Drawing.Point(260, 108);
             this.CostOfWorkField.Name = "CostOfWorkField";
             this.CostOfWorkField.Size = new System.Drawing.Size(187, 21);
             this.CostOfWorkField.TabIndex = 5;
@@ -231,10 +233,23 @@
             // 
             this.TypeOfWorkField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.TypeOfWorkField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TypeOfWorkField.Location = new System.Drawing.Point(256, 34);
+            this.TypeOfWorkField.Location = new System.Drawing.Point(260, 55);
             this.TypeOfWorkField.Name = "TypeOfWorkField";
             this.TypeOfWorkField.Size = new System.Drawing.Size(187, 21);
             this.TypeOfWorkField.TabIndex = 4;
+            // 
+            // AreaOfWorkLabel
+            // 
+            this.AreaOfWorkLabel.AutoSize = true;
+            this.AreaOfWorkLabel.BackColor = System.Drawing.Color.Transparent;
+            this.AreaOfWorkLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AreaOfWorkLabel.ForeColor = System.Drawing.Color.White;
+            this.AreaOfWorkLabel.Location = new System.Drawing.Point(114, 21);
+            this.AreaOfWorkLabel.Name = "AreaOfWorkLabel";
+            this.AreaOfWorkLabel.Size = new System.Drawing.Size(529, 19);
+            this.AreaOfWorkLabel.TabIndex = 23;
+            this.AreaOfWorkLabel.Text = "Для внесения данных в таблицу заполните следующие поля:";
+            this.AreaOfWorkLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // AreaofWork
             // 
@@ -242,8 +257,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BodyPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AreaofWork";
-            this.Text = "Form1";
+            this.Text = "AreaOfWork";
             this.Load += new System.EventHandler(this.AreaofWork_Load);
             this.BodyPanel.ResumeLayout(false);
             this.BodyPanel.PerformLayout();
@@ -255,7 +271,7 @@
         #endregion
 
         private System.Windows.Forms.Panel BodyPanel;
-        private System.Windows.Forms.Button CancelButton;
+        private new System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.PictureBox WorkPicture;
         private System.Windows.Forms.Panel LeftPanel;
         private System.Windows.Forms.Label InsurancePaymentLabel;
@@ -269,5 +285,6 @@
         private System.Windows.Forms.TextBox InsurancePaymentField;
         private System.Windows.Forms.TextBox CostOfWorkField;
         private System.Windows.Forms.TextBox TypeOfWorkField;
+        private System.Windows.Forms.Label AreaOfWorkLabel;
     }
 }
