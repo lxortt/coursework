@@ -1,6 +1,6 @@
-﻿namespace Course_work
+﻿namespace Course_work.Personal
 {
-    partial class Personal
+    partial class Masters
     {
         /// <summary>
         /// Required designer variable.
@@ -28,25 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Personal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Masters));
             this.BodyPanel = new System.Windows.Forms.Panel();
+            this.DateOfEmploymentLabel = new System.Windows.Forms.Label();
+            this.DateOfEmploymentField = new System.Windows.Forms.TextBox();
+            this.PersonalLabel = new System.Windows.Forms.Label();
             this.CancelButton = new System.Windows.Forms.Button();
             this.PersonalPicture = new System.Windows.Forms.PictureBox();
             this.LeftPanel = new System.Windows.Forms.Panel();
-            this.ChangeOfJobLabel = new System.Windows.Forms.Label();
+            this.PassportLabel = new System.Windows.Forms.Label();
             this.NumberPhoneLabel = new System.Windows.Forms.Label();
             this.SalaryLabel = new System.Windows.Forms.Label();
-            this.PositionLabel = new System.Windows.Forms.Label();
-            this.ChangeOfJobField = new System.Windows.Forms.TextBox();
+            this.SpecializationLabel = new System.Windows.Forms.Label();
+            this.PassportField = new System.Windows.Forms.TextBox();
             this.SalaryField = new System.Windows.Forms.TextBox();
             this.AddButton = new System.Windows.Forms.Button();
             this.DateOfBirthLabel = new System.Windows.Forms.Label();
             this.FIOLabel = new System.Windows.Forms.Label();
-            this.PositionField = new System.Windows.Forms.TextBox();
+            this.SpecializationField = new System.Windows.Forms.TextBox();
             this.NumberPhoneField = new System.Windows.Forms.TextBox();
             this.DateOfBirthField = new System.Windows.Forms.TextBox();
             this.FIOField = new System.Windows.Forms.TextBox();
-            this.PersonalLabel = new System.Windows.Forms.Label();
             this.BodyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PersonalPicture)).BeginInit();
             this.SuspendLayout();
@@ -54,20 +56,22 @@
             // BodyPanel
             // 
             this.BodyPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BodyPanel.BackgroundImage")));
+            this.BodyPanel.Controls.Add(this.DateOfEmploymentLabel);
+            this.BodyPanel.Controls.Add(this.DateOfEmploymentField);
             this.BodyPanel.Controls.Add(this.PersonalLabel);
             this.BodyPanel.Controls.Add(this.CancelButton);
             this.BodyPanel.Controls.Add(this.PersonalPicture);
             this.BodyPanel.Controls.Add(this.LeftPanel);
-            this.BodyPanel.Controls.Add(this.ChangeOfJobLabel);
+            this.BodyPanel.Controls.Add(this.PassportLabel);
             this.BodyPanel.Controls.Add(this.NumberPhoneLabel);
             this.BodyPanel.Controls.Add(this.SalaryLabel);
-            this.BodyPanel.Controls.Add(this.PositionLabel);
-            this.BodyPanel.Controls.Add(this.ChangeOfJobField);
+            this.BodyPanel.Controls.Add(this.SpecializationLabel);
+            this.BodyPanel.Controls.Add(this.PassportField);
             this.BodyPanel.Controls.Add(this.SalaryField);
             this.BodyPanel.Controls.Add(this.AddButton);
             this.BodyPanel.Controls.Add(this.DateOfBirthLabel);
             this.BodyPanel.Controls.Add(this.FIOLabel);
-            this.BodyPanel.Controls.Add(this.PositionField);
+            this.BodyPanel.Controls.Add(this.SpecializationField);
             this.BodyPanel.Controls.Add(this.NumberPhoneField);
             this.BodyPanel.Controls.Add(this.DateOfBirthField);
             this.BodyPanel.Controls.Add(this.FIOField);
@@ -75,7 +79,41 @@
             this.BodyPanel.Location = new System.Drawing.Point(0, 0);
             this.BodyPanel.Name = "BodyPanel";
             this.BodyPanel.Size = new System.Drawing.Size(800, 450);
-            this.BodyPanel.TabIndex = 5;
+            this.BodyPanel.TabIndex = 6;
+            // 
+            // DateOfEmploymentLabel
+            // 
+            this.DateOfEmploymentLabel.AutoSize = true;
+            this.DateOfEmploymentLabel.BackColor = System.Drawing.Color.Transparent;
+            this.DateOfEmploymentLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DateOfEmploymentLabel.ForeColor = System.Drawing.Color.Violet;
+            this.DateOfEmploymentLabel.Location = new System.Drawing.Point(119, 364);
+            this.DateOfEmploymentLabel.Name = "DateOfEmploymentLabel";
+            this.DateOfEmploymentLabel.Size = new System.Drawing.Size(119, 16);
+            this.DateOfEmploymentLabel.TabIndex = 25;
+            this.DateOfEmploymentLabel.Text = "Дата устройства";
+            // 
+            // DateOfEmploymentField
+            // 
+            this.DateOfEmploymentField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.DateOfEmploymentField.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.DateOfEmploymentField.Location = new System.Drawing.Point(261, 364);
+            this.DateOfEmploymentField.Name = "DateOfEmploymentField";
+            this.DateOfEmploymentField.Size = new System.Drawing.Size(187, 21);
+            this.DateOfEmploymentField.TabIndex = 24;
+            // 
+            // PersonalLabel
+            // 
+            this.PersonalLabel.AutoSize = true;
+            this.PersonalLabel.BackColor = System.Drawing.Color.Transparent;
+            this.PersonalLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PersonalLabel.ForeColor = System.Drawing.Color.White;
+            this.PersonalLabel.Location = new System.Drawing.Point(105, 22);
+            this.PersonalLabel.Name = "PersonalLabel";
+            this.PersonalLabel.Size = new System.Drawing.Size(529, 19);
+            this.PersonalLabel.TabIndex = 23;
+            this.PersonalLabel.Text = "Для внесения данных в таблицу заполните следующие поля:";
+            this.PersonalLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // CancelButton
             // 
@@ -88,7 +126,7 @@
             this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CancelButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.CancelButton.Location = new System.Drawing.Point(261, 412);
+            this.CancelButton.Location = new System.Drawing.Point(574, 400);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(187, 23);
             this.CancelButton.TabIndex = 22;
@@ -119,17 +157,17 @@
             this.LeftPanel.Size = new System.Drawing.Size(95, 450);
             this.LeftPanel.TabIndex = 20;
             // 
-            // ChangeOfJobLabel
+            // PassportLabel
             // 
-            this.ChangeOfJobLabel.AutoSize = true;
-            this.ChangeOfJobLabel.BackColor = System.Drawing.Color.Transparent;
-            this.ChangeOfJobLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ChangeOfJobLabel.ForeColor = System.Drawing.Color.Violet;
-            this.ChangeOfJobLabel.Location = new System.Drawing.Point(189, 312);
-            this.ChangeOfJobLabel.Name = "ChangeOfJobLabel";
-            this.ChangeOfJobLabel.Size = new System.Drawing.Size(49, 16);
-            this.ChangeOfJobLabel.TabIndex = 19;
-            this.ChangeOfJobLabel.Text = "Смена";
+            this.PassportLabel.AutoSize = true;
+            this.PassportLabel.BackColor = System.Drawing.Color.Transparent;
+            this.PassportLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PassportLabel.ForeColor = System.Drawing.Color.Violet;
+            this.PassportLabel.Location = new System.Drawing.Point(173, 312);
+            this.PassportLabel.Name = "PassportLabel";
+            this.PassportLabel.Size = new System.Drawing.Size(63, 16);
+            this.PassportLabel.TabIndex = 19;
+            this.PassportLabel.Text = "Паспорт";
             // 
             // NumberPhoneLabel
             // 
@@ -149,32 +187,32 @@
             this.SalaryLabel.BackColor = System.Drawing.Color.Transparent;
             this.SalaryLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SalaryLabel.ForeColor = System.Drawing.Color.Violet;
-            this.SalaryLabel.Location = new System.Drawing.Point(108, 264);
+            this.SalaryLabel.Location = new System.Drawing.Point(106, 260);
             this.SalaryLabel.Name = "SalaryLabel";
             this.SalaryLabel.Size = new System.Drawing.Size(130, 16);
             this.SalaryLabel.TabIndex = 16;
             this.SalaryLabel.Text = "Заработная плата";
             // 
-            // PositionLabel
+            // SpecializationLabel
             // 
-            this.PositionLabel.AutoSize = true;
-            this.PositionLabel.BackColor = System.Drawing.Color.Transparent;
-            this.PositionLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PositionLabel.ForeColor = System.Drawing.Color.Violet;
-            this.PositionLabel.Location = new System.Drawing.Point(154, 210);
-            this.PositionLabel.Name = "PositionLabel";
-            this.PositionLabel.Size = new System.Drawing.Size(84, 16);
-            this.PositionLabel.TabIndex = 15;
-            this.PositionLabel.Text = "Должность";
+            this.SpecializationLabel.AutoSize = true;
+            this.SpecializationLabel.BackColor = System.Drawing.Color.Transparent;
+            this.SpecializationLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SpecializationLabel.ForeColor = System.Drawing.Color.Violet;
+            this.SpecializationLabel.Location = new System.Drawing.Point(125, 210);
+            this.SpecializationLabel.Name = "SpecializationLabel";
+            this.SpecializationLabel.Size = new System.Drawing.Size(110, 16);
+            this.SpecializationLabel.TabIndex = 15;
+            this.SpecializationLabel.Text = "Специализация";
             // 
-            // ChangeOfJobField
+            // PassportField
             // 
-            this.ChangeOfJobField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ChangeOfJobField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ChangeOfJobField.Location = new System.Drawing.Point(261, 311);
-            this.ChangeOfJobField.Name = "ChangeOfJobField";
-            this.ChangeOfJobField.Size = new System.Drawing.Size(187, 21);
-            this.ChangeOfJobField.TabIndex = 14;
+            this.PassportField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.PassportField.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.PassportField.Location = new System.Drawing.Point(261, 311);
+            this.PassportField.Name = "PassportField";
+            this.PassportField.Size = new System.Drawing.Size(187, 21);
+            this.PassportField.TabIndex = 14;
             // 
             // SalaryField
             // 
@@ -195,7 +233,7 @@
             this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.AddButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.AddButton.Location = new System.Drawing.Point(261, 367);
+            this.AddButton.Location = new System.Drawing.Point(261, 400);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(187, 23);
             this.AddButton.TabIndex = 12;
@@ -227,14 +265,14 @@
             this.FIOLabel.TabIndex = 8;
             this.FIOLabel.Text = "ФИО";
             // 
-            // PositionField
+            // SpecializationField
             // 
-            this.PositionField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.PositionField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.PositionField.Location = new System.Drawing.Point(261, 209);
-            this.PositionField.Name = "PositionField";
-            this.PositionField.Size = new System.Drawing.Size(187, 21);
-            this.PositionField.TabIndex = 7;
+            this.SpecializationField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.SpecializationField.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.SpecializationField.Location = new System.Drawing.Point(261, 209);
+            this.SpecializationField.Name = "SpecializationField";
+            this.SpecializationField.Size = new System.Drawing.Size(187, 21);
+            this.SpecializationField.TabIndex = 7;
             // 
             // NumberPhoneField
             // 
@@ -263,29 +301,15 @@
             this.FIOField.Size = new System.Drawing.Size(187, 21);
             this.FIOField.TabIndex = 4;
             // 
-            // PersonalLabel
-            // 
-            this.PersonalLabel.AutoSize = true;
-            this.PersonalLabel.BackColor = System.Drawing.Color.Transparent;
-            this.PersonalLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PersonalLabel.ForeColor = System.Drawing.Color.White;
-            this.PersonalLabel.Location = new System.Drawing.Point(105, 22);
-            this.PersonalLabel.Name = "PersonalLabel";
-            this.PersonalLabel.Size = new System.Drawing.Size(529, 19);
-            this.PersonalLabel.TabIndex = 23;
-            this.PersonalLabel.Text = "Для внесения данных в таблицу заполните следующие поля:";
-            this.PersonalLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // Personal
+            // Masters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BodyPanel);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Personal";
-            this.Text = "Personal";
-            this.Load += new System.EventHandler(this.Personal_Load);
+            this.Name = "Masters";
+            this.Text = "Owners";
+            this.Load += new System.EventHandler(this.Masters_Load);
             this.BodyPanel.ResumeLayout(false);
             this.BodyPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PersonalPicture)).EndInit();
@@ -296,22 +320,24 @@
         #endregion
 
         private System.Windows.Forms.Panel BodyPanel;
+        private System.Windows.Forms.Label DateOfEmploymentLabel;
+        private System.Windows.Forms.TextBox DateOfEmploymentField;
+        private System.Windows.Forms.Label PersonalLabel;
         private new System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.PictureBox PersonalPicture;
         private System.Windows.Forms.Panel LeftPanel;
-        private System.Windows.Forms.Label ChangeOfJobLabel;
+        private System.Windows.Forms.Label PassportLabel;
         private System.Windows.Forms.Label NumberPhoneLabel;
         private System.Windows.Forms.Label SalaryLabel;
-        private System.Windows.Forms.Label PositionLabel;
-        private System.Windows.Forms.TextBox ChangeOfJobField;
+        private System.Windows.Forms.Label SpecializationLabel;
+        private System.Windows.Forms.TextBox PassportField;
         private System.Windows.Forms.TextBox SalaryField;
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Label DateOfBirthLabel;
         private System.Windows.Forms.Label FIOLabel;
-        private System.Windows.Forms.TextBox PositionField;
+        private System.Windows.Forms.TextBox SpecializationField;
         private System.Windows.Forms.TextBox NumberPhoneField;
         private System.Windows.Forms.TextBox DateOfBirthField;
         private System.Windows.Forms.TextBox FIOField;
-        private System.Windows.Forms.Label PersonalLabel;
     }
 }

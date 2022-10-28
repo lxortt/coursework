@@ -28,11 +28,10 @@ namespace Course_work
         {
             string TypeOfWork = TypeOfWorkField.Text;
             string CostOfWork = CostOfWorkField.Text;
-            string InsurancePayment = InsurancePaymentField.Text;
             string Deadline = DeadlineField.Text;
             string ApprovalDate = ApprovalDateField.Text;
-            string sql_update_current_car = $"INSERT INTO Cars ( TypeOfWork, CostOfWork, InsurancePayment, Deadline, ApprovalDate )" +
-                                            $"VALUES ('{TypeOfWork}', '{CostOfWork}', '{InsurancePayment}', '{Deadline}', '{ApprovalDate}')";
+            string sql_update_current_car = $"INSERT INTO AreaofWork ( TypeOfWork, CostOfWork, Deadline, ApprovalDate )" +
+                                            $"VALUES ('{TypeOfWork}', '{CostOfWork}', '{Deadline}', '{ApprovalDate}')";
             // устанавливаем соединение с БД
             conn.Open();
             // объект для выполнения SQL-запроса

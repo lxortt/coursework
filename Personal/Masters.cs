@@ -9,16 +9,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Course_work
+namespace Course_work.Personal
 {
-    public partial class Personal : Form
+    public partial class Masters : Form
     {
-        public Personal()
+        public Masters()
         {
             InitializeComponent();
         }
 
-        private void Personal_Load(object sender, EventArgs e)
+        private void Masters_Load(object sender, EventArgs e)
         {
             string connStr = "server=chuc.caseum.ru; port=33333; username=st_4_20_10; password=88536946; database=is_4_20_st10_KURS;";
             conn = new MySqlConnection(connStr);
@@ -29,11 +29,12 @@ namespace Course_work
             string FIO = FIOField.Text;
             string DateOfBirth = DateOfBirthField.Text;
             string NumberPhone = NumberPhoneField.Text;
-            string Position = PositionField.Text;
+            string Specialization = SpecializationField.Text;
             string Salary = SalaryField.Text;
-            string ChangeOfJob = ChangeOfJobField.Text;
-            string sql_update_current_car = $"INSERT INTO Cars ( FIO, DateOfBirth, NumberPhone, Position, Salary, ChangeOfJob )" +
-                                            $"VALUES ('{FIO}', '{DateOfBirth}', '{NumberPhone}', '{Position}', '{Salary}', '{ChangeOfJob}')";
+            string Passport = PassportField.Text;
+            string DateOfEmployment = DateOfEmploymentField.Text;
+            string sql_update_current_car = $"INSERT INTO Masters ( FIO, DateOfBirth, NumberPhone, Specialization, Salary, Passport, DateOfEmployment )" +
+                                            $"VALUES ('{FIO}', '{DateOfBirth}', '{NumberPhone}', '{Specialization}', '{Salary}', '{Passport}', '{DateOfEmployment}')";
             // устанавливаем соединение с БД
             conn.Open();
             // объект для выполнения SQL-запроса

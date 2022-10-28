@@ -28,10 +28,10 @@ namespace coursework
         {
             string Login = LoginField.Text;
             string Password = sha256 (PasswordField.Text);
-            string Mail = MailField.Text;
+            string Email = EmailField.Text;
             string Phone = PhoneField.Text;
-            string sql_update_current_account = $"INSERT INTO Users (Login, Password, Mail, Phone) " +
-                                            $"VALUES ('{Login}', '{Password}', '{Mail}','{Phone}')";
+            string sql_update_current_account = $"INSERT INTO Users (Login, Password, Email, Phone) " +
+                                            $"VALUES ('{Login}', '{Password}', '{Email}','{Phone}')";
             // устанавливаем соединение с БД
             conn.Open();
             // объект для выполнения SQL-запроса

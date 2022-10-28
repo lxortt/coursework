@@ -37,11 +37,11 @@
             this.AuthLinkLabel = new System.Windows.Forms.LinkLabel();
             this.CreateButton = new System.Windows.Forms.Button();
             this.PhoneLabel = new System.Windows.Forms.Label();
-            this.MailLabel = new System.Windows.Forms.Label();
+            this.EmailLabel = new System.Windows.Forms.Label();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.LoginLabel = new System.Windows.Forms.Label();
             this.PhoneField = new System.Windows.Forms.TextBox();
-            this.MailField = new System.Windows.Forms.TextBox();
+            this.EmailField = new System.Windows.Forms.TextBox();
             this.PasswordField = new System.Windows.Forms.TextBox();
             this.LoginField = new System.Windows.Forms.TextBox();
             this.CreatePicture = new System.Windows.Forms.PictureBox();
@@ -103,11 +103,11 @@
             this.BodyPanel.Controls.Add(this.AuthLinkLabel);
             this.BodyPanel.Controls.Add(this.CreateButton);
             this.BodyPanel.Controls.Add(this.PhoneLabel);
-            this.BodyPanel.Controls.Add(this.MailLabel);
+            this.BodyPanel.Controls.Add(this.EmailLabel);
             this.BodyPanel.Controls.Add(this.PasswordLabel);
             this.BodyPanel.Controls.Add(this.LoginLabel);
             this.BodyPanel.Controls.Add(this.PhoneField);
-            this.BodyPanel.Controls.Add(this.MailField);
+            this.BodyPanel.Controls.Add(this.EmailField);
             this.BodyPanel.Controls.Add(this.PasswordField);
             this.BodyPanel.Controls.Add(this.LoginField);
             this.BodyPanel.Controls.Add(this.CreatePicture);
@@ -164,17 +164,17 @@
             this.PhoneLabel.TabIndex = 11;
             this.PhoneLabel.Text = "Телефон";
             // 
-            // MailLabel
+            // EmailLabel
             // 
-            this.MailLabel.AutoSize = true;
-            this.MailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.MailLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MailLabel.ForeColor = System.Drawing.Color.Violet;
-            this.MailLabel.Location = new System.Drawing.Point(48, 166);
-            this.MailLabel.Name = "MailLabel";
-            this.MailLabel.Size = new System.Drawing.Size(32, 16);
-            this.MailLabel.TabIndex = 10;
-            this.MailLabel.Text = "Mail";
+            this.EmailLabel.AutoSize = true;
+            this.EmailLabel.BackColor = System.Drawing.Color.Transparent;
+            this.EmailLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EmailLabel.ForeColor = System.Drawing.Color.Violet;
+            this.EmailLabel.Location = new System.Drawing.Point(48, 166);
+            this.EmailLabel.Name = "EmailLabel";
+            this.EmailLabel.Size = new System.Drawing.Size(39, 16);
+            this.EmailLabel.TabIndex = 10;
+            this.EmailLabel.Text = "Email";
             // 
             // PasswordLabel
             // 
@@ -209,14 +209,14 @@
             this.PhoneField.Size = new System.Drawing.Size(100, 21);
             this.PhoneField.TabIndex = 7;
             // 
-            // MailField
+            // EmailField
             // 
-            this.MailField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.MailField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.MailField.Location = new System.Drawing.Point(124, 166);
-            this.MailField.Name = "MailField";
-            this.MailField.Size = new System.Drawing.Size(100, 21);
-            this.MailField.TabIndex = 6;
+            this.EmailField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.EmailField.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.EmailField.Location = new System.Drawing.Point(124, 166);
+            this.EmailField.Name = "EmailField";
+            this.EmailField.Size = new System.Drawing.Size(100, 21);
+            this.EmailField.TabIndex = 6;
             // 
             // PasswordField
             // 
@@ -282,11 +282,11 @@
         private System.Windows.Forms.Label SingUpLabel;
         private System.Windows.Forms.PictureBox CreatePicture;
         private System.Windows.Forms.TextBox PhoneField;
-        private System.Windows.Forms.TextBox MailField;
+        private System.Windows.Forms.TextBox EmailField;
         private System.Windows.Forms.TextBox PasswordField;
         private System.Windows.Forms.TextBox LoginField;
         private System.Windows.Forms.Label PhoneLabel;
-        private System.Windows.Forms.Label MailLabel;
+        private System.Windows.Forms.Label EmailLabel;
         private System.Windows.Forms.Label PasswordLabel;
         private System.Windows.Forms.Label LoginLabel;
         private System.Windows.Forms.Button CreateButton;

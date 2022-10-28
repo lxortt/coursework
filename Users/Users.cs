@@ -5,39 +5,34 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Course_work
+namespace Course_work.Users
 {
-    public partial class Clients : Form
+    public partial class Users : Form
     {
-        public Clients()
+        public Users()
         {
             InitializeComponent();
         }
 
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void Users_Load(object sender, EventArgs e)
         {
             string connStr = "server=chuc.caseum.ru; port=33333; username=st_4_20_10; password=88536946; database=is_4_20_st10_KURS;";
             conn = new MySqlConnection(connStr);
         }
         MySqlConnection conn;
-
         private void AddButton_Click(object sender, EventArgs e)
         {
-            string FIO = FIOField.Text;
-            string DateOfBirth = DateOfBirthField.Text;
-            string NumberPhone = NumberPhoneField.Text;
-            string Passport = PassportField.Text;
-            string InsurancePolicy = InsurancePolicyField.Text;
-            string InsurancePayment = InsurancePaymentField.Text;
-            string DriversLicense = DriversLicenseField.Text;
-            string sql_update_current_car = $"INSERT INTO Clients ( FIO, DateOfBirth, NumberPhone, Passport, InsurancePolicy, InsurancePayment, DriversLicense )" +
-                                            $"VALUES ('{FIO}', '{DateOfBirth}', '{NumberPhone}', '{Passport}', '{InsurancePolicy}', '{InsurancePayment}', '{DriversLicense}')";
+            string Login = LoginField.Text;
+            string Password = PasswordField.Text;
+            string Email = EmailField.Text;
+            string Phone = PhoneField.Text;
+            string AccessLevel = AccessLevelField.Text;
+            string sql_update_current_car = $"INSERT INTO Users ( Password, Email, Phone, AccessLevel, )" +
+                                            $"VALUES ('{Login}', '{Password}', '{Email}', '{Phone}', '{AccessLevel}')";
             // устанавливаем соединение с БД
             conn.Open();
             // объект для выполнения SQL-запроса

@@ -32,7 +32,7 @@ namespace Course_work
             string InsuranceType = InsuranceTypeField.Text;
             string DateOfInsurance = DateOfInsuranceField.Text;
             string TermOfInsurance = TermOfInsuranceField.Text;
-            string sql_update_current_car = $"INSERT INTO Cars ( FIO, InsurancePolicy, InsuranceCompany, InsuranceType, DateOfInsurance, TermOfInsurance )" +
+            string sql_update_current_car = $"INSERT INTO Insurance ( FIO, InsurancePolicy, InsuranceCompany, InsuranceType, DateOfInsurance, TermOfInsurance )" +
                                             $"VALUES ('{FIO}', '{InsurancePolicy}', '{InsuranceCompany}', '{InsuranceType}', '{DateOfInsurance}', '{TermOfInsurance}')";
             // устанавливаем соединение с БД
             conn.Open();

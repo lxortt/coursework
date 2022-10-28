@@ -152,9 +152,9 @@
             this.AuthPicture.BackColor = System.Drawing.Color.Transparent;
             this.AuthPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.AuthPicture.ErrorImage = null;
-            this.AuthPicture.Image = ((System.Drawing.Image)(resources.GetObject("AuthPicture.Image")));
+            this.AuthPicture.Image = global::Course_work.Properties.Resources.Users;
             this.AuthPicture.InitialImage = null;
-            this.AuthPicture.Location = new System.Drawing.Point(142, 12);
+            this.AuthPicture.Location = new System.Drawing.Point(145, 12);
             this.AuthPicture.Name = "AuthPicture";
             this.AuthPicture.Size = new System.Drawing.Size(64, 64);
             this.AuthPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

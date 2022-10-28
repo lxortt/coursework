@@ -30,20 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clients));
             this.BodyPanel = new System.Windows.Forms.Panel();
+            this.DriversLicenseLabel = new System.Windows.Forms.Label();
+            this.DriversLicenseField = new System.Windows.Forms.TextBox();
+            this.ClientsLabel = new System.Windows.Forms.Label();
             this.CancelButton = new System.Windows.Forms.Button();
             this.UserRegPicture = new System.Windows.Forms.PictureBox();
             this.LeftPanel = new System.Windows.Forms.Panel();
-            this.ClientsLabel = new System.Windows.Forms.Label();
             this.InsurancePaymentLabel = new System.Windows.Forms.Label();
             this.NumberPhoneLabel = new System.Windows.Forms.Label();
             this.InsurancePolicyLabel = new System.Windows.Forms.Label();
-            this.EmailLabel = new System.Windows.Forms.Label();
+            this.PassportLabel = new System.Windows.Forms.Label();
             this.InsurancePaymentField = new System.Windows.Forms.TextBox();
             this.InsurancePolicyField = new System.Windows.Forms.TextBox();
             this.AddButton = new System.Windows.Forms.Button();
             this.DateOfBirthLabel = new System.Windows.Forms.Label();
             this.FIOLabel = new System.Windows.Forms.Label();
-            this.EmailField = new System.Windows.Forms.TextBox();
+            this.PassportField = new System.Windows.Forms.TextBox();
             this.NumberPhoneField = new System.Windows.Forms.TextBox();
             this.DateOfBirthField = new System.Windows.Forms.TextBox();
             this.FIOField = new System.Windows.Forms.TextBox();
@@ -54,6 +56,8 @@
             // BodyPanel
             // 
             this.BodyPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BodyPanel.BackgroundImage")));
+            this.BodyPanel.Controls.Add(this.DriversLicenseLabel);
+            this.BodyPanel.Controls.Add(this.DriversLicenseField);
             this.BodyPanel.Controls.Add(this.ClientsLabel);
             this.BodyPanel.Controls.Add(this.CancelButton);
             this.BodyPanel.Controls.Add(this.UserRegPicture);
@@ -61,13 +65,13 @@
             this.BodyPanel.Controls.Add(this.InsurancePaymentLabel);
             this.BodyPanel.Controls.Add(this.NumberPhoneLabel);
             this.BodyPanel.Controls.Add(this.InsurancePolicyLabel);
-            this.BodyPanel.Controls.Add(this.EmailLabel);
+            this.BodyPanel.Controls.Add(this.PassportLabel);
             this.BodyPanel.Controls.Add(this.InsurancePaymentField);
             this.BodyPanel.Controls.Add(this.InsurancePolicyField);
             this.BodyPanel.Controls.Add(this.AddButton);
             this.BodyPanel.Controls.Add(this.DateOfBirthLabel);
             this.BodyPanel.Controls.Add(this.FIOLabel);
-            this.BodyPanel.Controls.Add(this.EmailField);
+            this.BodyPanel.Controls.Add(this.PassportField);
             this.BodyPanel.Controls.Add(this.NumberPhoneField);
             this.BodyPanel.Controls.Add(this.DateOfBirthField);
             this.BodyPanel.Controls.Add(this.FIOField);
@@ -76,6 +80,40 @@
             this.BodyPanel.Name = "BodyPanel";
             this.BodyPanel.Size = new System.Drawing.Size(800, 450);
             this.BodyPanel.TabIndex = 4;
+            // 
+            // DriversLicenseLabel
+            // 
+            this.DriversLicenseLabel.AutoSize = true;
+            this.DriversLicenseLabel.BackColor = System.Drawing.Color.Transparent;
+            this.DriversLicenseLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DriversLicenseLabel.ForeColor = System.Drawing.Color.Violet;
+            this.DriversLicenseLabel.Location = new System.Drawing.Point(105, 359);
+            this.DriversLicenseLabel.Name = "DriversLicenseLabel";
+            this.DriversLicenseLabel.Size = new System.Drawing.Size(142, 16);
+            this.DriversLicenseLabel.TabIndex = 24;
+            this.DriversLicenseLabel.Text = "Вод. удостоверение";
+            // 
+            // DriversLicenseField
+            // 
+            this.DriversLicenseField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.DriversLicenseField.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.DriversLicenseField.Location = new System.Drawing.Point(262, 358);
+            this.DriversLicenseField.Name = "DriversLicenseField";
+            this.DriversLicenseField.Size = new System.Drawing.Size(187, 21);
+            this.DriversLicenseField.TabIndex = 23;
+            // 
+            // ClientsLabel
+            // 
+            this.ClientsLabel.AutoSize = true;
+            this.ClientsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ClientsLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ClientsLabel.ForeColor = System.Drawing.Color.White;
+            this.ClientsLabel.Location = new System.Drawing.Point(106, 20);
+            this.ClientsLabel.Name = "ClientsLabel";
+            this.ClientsLabel.Size = new System.Drawing.Size(529, 19);
+            this.ClientsLabel.TabIndex = 3;
+            this.ClientsLabel.Text = "Для внесения данных в таблицу заполните следующие поля:";
+            this.ClientsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // CancelButton
             // 
@@ -88,7 +126,7 @@
             this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CancelButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.CancelButton.Location = new System.Drawing.Point(262, 412);
+            this.CancelButton.Location = new System.Drawing.Point(574, 403);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(187, 23);
             this.CancelButton.TabIndex = 22;
@@ -118,19 +156,6 @@
             this.LeftPanel.Name = "LeftPanel";
             this.LeftPanel.Size = new System.Drawing.Size(95, 450);
             this.LeftPanel.TabIndex = 20;
-            // 
-            // ClientsLabel
-            // 
-            this.ClientsLabel.AutoSize = true;
-            this.ClientsLabel.BackColor = System.Drawing.Color.Transparent;
-            this.ClientsLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ClientsLabel.ForeColor = System.Drawing.Color.White;
-            this.ClientsLabel.Location = new System.Drawing.Point(106, 20);
-            this.ClientsLabel.Name = "ClientsLabel";
-            this.ClientsLabel.Size = new System.Drawing.Size(529, 19);
-            this.ClientsLabel.TabIndex = 3;
-            this.ClientsLabel.Text = "Для внесения данных в таблицу заполните следующие поля:";
-            this.ClientsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // InsurancePaymentLabel
             // 
@@ -168,17 +193,17 @@
             this.InsurancePolicyLabel.TabIndex = 16;
             this.InsurancePolicyLabel.Text = "Номер полиса";
             // 
-            // EmailLabel
+            // PassportLabel
             // 
-            this.EmailLabel.AutoSize = true;
-            this.EmailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.EmailLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EmailLabel.ForeColor = System.Drawing.Color.Violet;
-            this.EmailLabel.Location = new System.Drawing.Point(200, 214);
-            this.EmailLabel.Name = "EmailLabel";
-            this.EmailLabel.Size = new System.Drawing.Size(39, 16);
-            this.EmailLabel.TabIndex = 15;
-            this.EmailLabel.Text = "Email";
+            this.PassportLabel.AutoSize = true;
+            this.PassportLabel.BackColor = System.Drawing.Color.Transparent;
+            this.PassportLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PassportLabel.ForeColor = System.Drawing.Color.Violet;
+            this.PassportLabel.Location = new System.Drawing.Point(176, 210);
+            this.PassportLabel.Name = "PassportLabel";
+            this.PassportLabel.Size = new System.Drawing.Size(63, 16);
+            this.PassportLabel.TabIndex = 15;
+            this.PassportLabel.Text = "Паспорт";
             // 
             // InsurancePaymentField
             // 
@@ -208,7 +233,7 @@
             this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.AddButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.AddButton.Location = new System.Drawing.Point(262, 367);
+            this.AddButton.Location = new System.Drawing.Point(262, 403);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(187, 23);
             this.AddButton.TabIndex = 12;
@@ -240,14 +265,14 @@
             this.FIOLabel.TabIndex = 8;
             this.FIOLabel.Text = "ФИО";
             // 
-            // EmailField
+            // PassportField
             // 
-            this.EmailField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.EmailField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.EmailField.Location = new System.Drawing.Point(262, 209);
-            this.EmailField.Name = "EmailField";
-            this.EmailField.Size = new System.Drawing.Size(187, 21);
-            this.EmailField.TabIndex = 7;
+            this.PassportField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.PassportField.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.PassportField.Location = new System.Drawing.Point(262, 209);
+            this.PassportField.Name = "PassportField";
+            this.PassportField.Size = new System.Drawing.Size(187, 21);
+            this.PassportField.TabIndex = 7;
             // 
             // NumberPhoneField
             // 
@@ -302,16 +327,18 @@
         private System.Windows.Forms.Label InsurancePaymentLabel;
         private System.Windows.Forms.Label NumberPhoneLabel;
         private System.Windows.Forms.Label InsurancePolicyLabel;
-        private System.Windows.Forms.Label EmailLabel;
+        private System.Windows.Forms.Label PassportLabel;
         private System.Windows.Forms.TextBox InsurancePaymentField;
         private System.Windows.Forms.TextBox InsurancePolicyField;
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Label DateOfBirthLabel;
         private System.Windows.Forms.Label FIOLabel;
-        private System.Windows.Forms.TextBox EmailField;
+        private System.Windows.Forms.TextBox PassportField;
         private System.Windows.Forms.TextBox NumberPhoneField;
         private System.Windows.Forms.TextBox DateOfBirthField;
         private System.Windows.Forms.TextBox FIOField;
         private System.Windows.Forms.Label ClientsLabel;
+        private System.Windows.Forms.Label DriversLicenseLabel;
+        private System.Windows.Forms.TextBox DriversLicenseField;
     }
 }
