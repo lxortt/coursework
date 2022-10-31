@@ -258,12 +258,13 @@
             this.LogOutButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LogOutButton.ForeColor = System.Drawing.Color.BlueViolet;
             this.LogOutButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.LogOutButton.Location = new System.Drawing.Point(632, 75);
+            this.LogOutButton.Location = new System.Drawing.Point(632, 76);
             this.LogOutButton.Name = "LogOutButton";
             this.LogOutButton.Size = new System.Drawing.Size(64, 48);
             this.LogOutButton.TabIndex = 34;
             this.LogOutButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.LogOutButton.UseVisualStyleBackColor = false;
+            this.LogOutButton.Click += new System.EventHandler(this.LogOutButton_Click_1);
             // 
             // DataGridView
             // 
@@ -295,7 +296,7 @@
             this.SearchLabel.BackColor = System.Drawing.Color.Transparent;
             this.SearchLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SearchLabel.ForeColor = System.Drawing.Color.White;
-            this.SearchLabel.Location = new System.Drawing.Point(490, 76);
+            this.SearchLabel.Location = new System.Drawing.Point(481, 83);
             this.SearchLabel.Name = "SearchLabel";
             this.SearchLabel.Size = new System.Drawing.Size(47, 16);
             this.SearchLabel.TabIndex = 31;
@@ -305,7 +306,7 @@
             // SearchComboBox
             // 
             this.SearchComboBox.FormattingEnabled = true;
-            this.SearchComboBox.Location = new System.Drawing.Point(451, 102);
+            this.SearchComboBox.Location = new System.Drawing.Point(442, 102);
             this.SearchComboBox.Name = "SearchComboBox";
             this.SearchComboBox.Size = new System.Drawing.Size(121, 21);
             this.SearchComboBox.TabIndex = 30;
@@ -323,7 +324,7 @@
             this.ResetButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ResetButton.ForeColor = System.Drawing.Color.BlueViolet;
             this.ResetButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ResetButton.Location = new System.Drawing.Point(578, 75);
+            this.ResetButton.Location = new System.Drawing.Point(569, 76);
             this.ResetButton.Name = "ResetButton";
             this.ResetButton.Size = new System.Drawing.Size(64, 48);
             this.ResetButton.TabIndex = 29;

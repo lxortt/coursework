@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
-            this.FooterPanel = new System.Windows.Forms.Panel();
-            this.SaturnLabel = new System.Windows.Forms.Label();
             this.HeaderPanel = new System.Windows.Forms.Panel();
             this.SingUpLabel = new System.Windows.Forms.Label();
             this.BodyPanel = new System.Windows.Forms.Panel();
@@ -45,34 +43,14 @@
             this.PasswordField = new System.Windows.Forms.TextBox();
             this.LoginField = new System.Windows.Forms.TextBox();
             this.CreatePicture = new System.Windows.Forms.PictureBox();
-            this.FooterPanel.SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.FooterPanel = new System.Windows.Forms.Panel();
             this.HeaderPanel.SuspendLayout();
             this.BodyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CreatePicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.FooterPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // FooterPanel
-            // 
-            this.FooterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(26)))), ((int)(((byte)(33)))));
-            this.FooterPanel.Controls.Add(this.SaturnLabel);
-            this.FooterPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.FooterPanel.Location = new System.Drawing.Point(0, 416);
-            this.FooterPanel.Name = "FooterPanel";
-            this.FooterPanel.Size = new System.Drawing.Size(334, 70);
-            this.FooterPanel.TabIndex = 0;
-            // 
-            // SaturnLabel
-            // 
-            this.SaturnLabel.AutoSize = true;
-            this.SaturnLabel.BackColor = System.Drawing.Color.Transparent;
-            this.SaturnLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SaturnLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.SaturnLabel.Location = new System.Drawing.Point(76, 14);
-            this.SaturnLabel.Name = "SaturnLabel";
-            this.SaturnLabel.Size = new System.Drawing.Size(194, 16);
-            this.SaturnLabel.TabIndex = 5;
-            this.SaturnLabel.Text = "Group of companies \"Saturn\"";
-            this.SaturnLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // HeaderPanel
             // 
@@ -90,7 +68,7 @@
             this.SingUpLabel.BackColor = System.Drawing.Color.Transparent;
             this.SingUpLabel.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SingUpLabel.ForeColor = System.Drawing.Color.White;
-            this.SingUpLabel.Location = new System.Drawing.Point(28, 24);
+            this.SingUpLabel.Location = new System.Drawing.Point(20, 21);
             this.SingUpLabel.Name = "SingUpLabel";
             this.SingUpLabel.Size = new System.Drawing.Size(294, 25);
             this.SingUpLabel.TabIndex = 3;
@@ -100,6 +78,8 @@
             // BodyPanel
             // 
             this.BodyPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BodyPanel.BackgroundImage")));
+            this.BodyPanel.Controls.Add(this.FooterPanel);
+            this.BodyPanel.Controls.Add(this.EmailField);
             this.BodyPanel.Controls.Add(this.AuthLinkLabel);
             this.BodyPanel.Controls.Add(this.CreateButton);
             this.BodyPanel.Controls.Add(this.PhoneLabel);
@@ -107,14 +87,13 @@
             this.BodyPanel.Controls.Add(this.PasswordLabel);
             this.BodyPanel.Controls.Add(this.LoginLabel);
             this.BodyPanel.Controls.Add(this.PhoneField);
-            this.BodyPanel.Controls.Add(this.EmailField);
             this.BodyPanel.Controls.Add(this.PasswordField);
             this.BodyPanel.Controls.Add(this.LoginField);
             this.BodyPanel.Controls.Add(this.CreatePicture);
             this.BodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BodyPanel.Location = new System.Drawing.Point(0, 70);
             this.BodyPanel.Name = "BodyPanel";
-            this.BodyPanel.Size = new System.Drawing.Size(334, 346);
+            this.BodyPanel.Size = new System.Drawing.Size(334, 416);
             this.BodyPanel.TabIndex = 0;
             // 
             // AuthLinkLabel
@@ -125,7 +104,7 @@
             this.AuthLinkLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AuthLinkLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.AuthLinkLabel.LinkColor = System.Drawing.Color.Coral;
-            this.AuthLinkLabel.Location = new System.Drawing.Point(76, 284);
+            this.AuthLinkLabel.Location = new System.Drawing.Point(70, 281);
             this.AuthLinkLabel.Name = "AuthLinkLabel";
             this.AuthLinkLabel.Size = new System.Drawing.Size(195, 16);
             this.AuthLinkLabel.TabIndex = 13;
@@ -144,7 +123,7 @@
             this.CreateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.CreateButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.CreateButton.Location = new System.Drawing.Point(124, 249);
+            this.CreateButton.Location = new System.Drawing.Point(117, 252);
             this.CreateButton.Name = "CreateButton";
             this.CreateButton.Size = new System.Drawing.Size(100, 23);
             this.CreateButton.TabIndex = 12;
@@ -158,7 +137,7 @@
             this.PhoneLabel.BackColor = System.Drawing.Color.Transparent;
             this.PhoneLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PhoneLabel.ForeColor = System.Drawing.Color.Violet;
-            this.PhoneLabel.Location = new System.Drawing.Point(48, 208);
+            this.PhoneLabel.Location = new System.Drawing.Point(134, 206);
             this.PhoneLabel.Name = "PhoneLabel";
             this.PhoneLabel.Size = new System.Drawing.Size(66, 16);
             this.PhoneLabel.TabIndex = 11;
@@ -170,7 +149,7 @@
             this.EmailLabel.BackColor = System.Drawing.Color.Transparent;
             this.EmailLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EmailLabel.ForeColor = System.Drawing.Color.Violet;
-            this.EmailLabel.Location = new System.Drawing.Point(48, 166);
+            this.EmailLabel.Location = new System.Drawing.Point(146, 163);
             this.EmailLabel.Name = "EmailLabel";
             this.EmailLabel.Size = new System.Drawing.Size(39, 16);
             this.EmailLabel.TabIndex = 10;
@@ -182,7 +161,7 @@
             this.PasswordLabel.BackColor = System.Drawing.Color.Transparent;
             this.PasswordLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PasswordLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.PasswordLabel.Location = new System.Drawing.Point(48, 124);
+            this.PasswordLabel.Location = new System.Drawing.Point(139, 120);
             this.PasswordLabel.Name = "PasswordLabel";
             this.PasswordLabel.Size = new System.Drawing.Size(57, 16);
             this.PasswordLabel.TabIndex = 9;
@@ -194,7 +173,7 @@
             this.LoginLabel.BackColor = System.Drawing.Color.Transparent;
             this.LoginLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoginLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.LoginLabel.Location = new System.Drawing.Point(48, 89);
+            this.LoginLabel.Location = new System.Drawing.Point(144, 77);
             this.LoginLabel.Name = "LoginLabel";
             this.LoginLabel.Size = new System.Drawing.Size(46, 16);
             this.LoginLabel.TabIndex = 8;
@@ -204,7 +183,7 @@
             // 
             this.PhoneField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.PhoneField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.PhoneField.Location = new System.Drawing.Point(124, 207);
+            this.PhoneField.Location = new System.Drawing.Point(117, 225);
             this.PhoneField.Name = "PhoneField";
             this.PhoneField.Size = new System.Drawing.Size(100, 21);
             this.PhoneField.TabIndex = 7;
@@ -213,7 +192,7 @@
             // 
             this.EmailField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.EmailField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.EmailField.Location = new System.Drawing.Point(124, 166);
+            this.EmailField.Location = new System.Drawing.Point(117, 182);
             this.EmailField.Name = "EmailField";
             this.EmailField.Size = new System.Drawing.Size(100, 21);
             this.EmailField.TabIndex = 6;
@@ -222,7 +201,7 @@
             // 
             this.PasswordField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.PasswordField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.PasswordField.Location = new System.Drawing.Point(124, 124);
+            this.PasswordField.Location = new System.Drawing.Point(117, 139);
             this.PasswordField.Name = "PasswordField";
             this.PasswordField.Size = new System.Drawing.Size(100, 21);
             this.PasswordField.TabIndex = 5;
@@ -232,7 +211,7 @@
             // 
             this.LoginField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.LoginField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.LoginField.Location = new System.Drawing.Point(124, 85);
+            this.LoginField.Location = new System.Drawing.Point(117, 96);
             this.LoginField.Name = "LoginField";
             this.LoginField.Size = new System.Drawing.Size(100, 21);
             this.LoginField.TabIndex = 4;
@@ -244,12 +223,35 @@
             this.CreatePicture.ErrorImage = null;
             this.CreatePicture.Image = ((System.Drawing.Image)(resources.GetObject("CreatePicture.Image")));
             this.CreatePicture.InitialImage = null;
-            this.CreatePicture.Location = new System.Drawing.Point(143, 6);
+            this.CreatePicture.Location = new System.Drawing.Point(134, 6);
             this.CreatePicture.Name = "CreatePicture";
             this.CreatePicture.Size = new System.Drawing.Size(64, 64);
             this.CreatePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.CreatePicture.TabIndex = 3;
             this.CreatePicture.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = global::Course_work.Properties.Resources.Saturn;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(72, -21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(190, 190);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
+            // FooterPanel
+            // 
+            this.FooterPanel.BackColor = System.Drawing.Color.Transparent;
+            this.FooterPanel.Controls.Add(this.pictureBox1);
+            this.FooterPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.FooterPanel.Location = new System.Drawing.Point(0, 302);
+            this.FooterPanel.Name = "FooterPanel";
+            this.FooterPanel.Size = new System.Drawing.Size(334, 114);
+            this.FooterPanel.TabIndex = 35;
             // 
             // SignUp
             // 
@@ -258,25 +260,22 @@
             this.ClientSize = new System.Drawing.Size(334, 486);
             this.Controls.Add(this.BodyPanel);
             this.Controls.Add(this.HeaderPanel);
-            this.Controls.Add(this.FooterPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SignUp";
             this.Text = "SignUp";
             this.Load += new System.EventHandler(this.SignUp_Load);
-            this.FooterPanel.ResumeLayout(false);
-            this.FooterPanel.PerformLayout();
             this.HeaderPanel.ResumeLayout(false);
             this.HeaderPanel.PerformLayout();
             this.BodyPanel.ResumeLayout(false);
             this.BodyPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CreatePicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.FooterPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel FooterPanel;
         private System.Windows.Forms.Panel HeaderPanel;
         private System.Windows.Forms.Panel BodyPanel;
         private System.Windows.Forms.Label SingUpLabel;
@@ -291,6 +290,7 @@
         private System.Windows.Forms.Label LoginLabel;
         private System.Windows.Forms.Button CreateButton;
         private System.Windows.Forms.LinkLabel AuthLinkLabel;
-        private System.Windows.Forms.Label SaturnLabel;
+        private System.Windows.Forms.Panel FooterPanel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

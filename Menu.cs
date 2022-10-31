@@ -18,9 +18,7 @@ namespace coursework
             InitializeComponent();
         }
 
-
-
-        private void LogOutButton_Click(object sender, EventArgs e)
+        private void LogOutButton_Click_1(object sender, EventArgs e)
         {
             this.Close();
             new Thread(() => Application.Run(new Auth())).Start();
