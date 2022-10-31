@@ -116,5 +116,19 @@ namespace coursework
                 public static string ID = null;
                 public static string Login = null;
         }
+        private void LoginField_Enter(object sender, EventArgs e)
+        {
+            if (LoginField.Text == "Логин")
+            {
+                LoginField.Text = "";
+            }
+        }
+        private void LoginField_Leave(object sender, EventArgs e)
+        {
+            if (LoginField.Text == "")
+            {
+                LoginField.Text = "Логин";
+            }
+        }
     }
 }

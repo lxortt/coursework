@@ -30,17 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.LeftPanel = new System.Windows.Forms.Panel();
-            this.BodyPanel = new System.Windows.Forms.Panel();
-            this.SearchLabel = new System.Windows.Forms.Label();
-            this.SearchComboBox = new System.Windows.Forms.ComboBox();
-            this.ResetButton = new System.Windows.Forms.Button();
-            this.SearchButton = new System.Windows.Forms.Button();
-            this.DelButton = new System.Windows.Forms.Button();
-            this.EditButton = new System.Windows.Forms.Button();
-            this.AddButton = new System.Windows.Forms.Button();
-            this.HeaderPanel = new System.Windows.Forms.Panel();
-            this.LogOutButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.UsersButton = new System.Windows.Forms.Button();
             this.OrdersButton = new System.Windows.Forms.Button();
             this.MastersButton = new System.Windows.Forms.Button();
@@ -49,10 +38,23 @@
             this.AreaOfWorkButton = new System.Windows.Forms.Button();
             this.CarsButton = new System.Windows.Forms.Button();
             this.AuthPicture = new System.Windows.Forms.PictureBox();
+            this.BodyPanel = new System.Windows.Forms.Panel();
+            this.LogOutButton = new System.Windows.Forms.Button();
+            this.DataGridView = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.SearchLabel = new System.Windows.Forms.Label();
+            this.SearchComboBox = new System.Windows.Forms.ComboBox();
+            this.ResetButton = new System.Windows.Forms.Button();
+            this.SearchButton = new System.Windows.Forms.Button();
+            this.DelButton = new System.Windows.Forms.Button();
+            this.EditButton = new System.Windows.Forms.Button();
+            this.AddButton = new System.Windows.Forms.Button();
+            this.HeaderPanel = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.LeftPanel.SuspendLayout();
-            this.BodyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AuthPicture)).BeginInit();
+            this.BodyPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,184 +74,6 @@
             this.LeftPanel.Name = "LeftPanel";
             this.LeftPanel.Size = new System.Drawing.Size(104, 450);
             this.LeftPanel.TabIndex = 0;
-            // 
-            // BodyPanel
-            // 
-            this.BodyPanel.BackgroundImage = global::Course_work.Properties.Resources.Background;
-            this.BodyPanel.Controls.Add(this.pictureBox1);
-            this.BodyPanel.Controls.Add(this.SearchLabel);
-            this.BodyPanel.Controls.Add(this.SearchComboBox);
-            this.BodyPanel.Controls.Add(this.ResetButton);
-            this.BodyPanel.Controls.Add(this.SearchButton);
-            this.BodyPanel.Controls.Add(this.DelButton);
-            this.BodyPanel.Controls.Add(this.EditButton);
-            this.BodyPanel.Controls.Add(this.AddButton);
-            this.BodyPanel.Controls.Add(this.HeaderPanel);
-            this.BodyPanel.Controls.Add(this.LogOutButton);
-            this.BodyPanel.Controls.Add(this.button2);
-            this.BodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BodyPanel.Location = new System.Drawing.Point(104, 0);
-            this.BodyPanel.Name = "BodyPanel";
-            this.BodyPanel.Size = new System.Drawing.Size(696, 450);
-            this.BodyPanel.TabIndex = 0;
-            // 
-            // SearchLabel
-            // 
-            this.SearchLabel.AutoSize = true;
-            this.SearchLabel.BackColor = System.Drawing.Color.Transparent;
-            this.SearchLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SearchLabel.ForeColor = System.Drawing.Color.White;
-            this.SearchLabel.Location = new System.Drawing.Point(541, 77);
-            this.SearchLabel.Name = "SearchLabel";
-            this.SearchLabel.Size = new System.Drawing.Size(47, 16);
-            this.SearchLabel.TabIndex = 31;
-            this.SearchLabel.Text = "Поиск";
-            this.SearchLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // SearchComboBox
-            // 
-            this.SearchComboBox.FormattingEnabled = true;
-            this.SearchComboBox.Location = new System.Drawing.Point(502, 103);
-            this.SearchComboBox.Name = "SearchComboBox";
-            this.SearchComboBox.Size = new System.Drawing.Size(121, 21);
-            this.SearchComboBox.TabIndex = 30;
-            // 
-            // ResetButton
-            // 
-            this.ResetButton.BackColor = System.Drawing.Color.Transparent;
-            this.ResetButton.BackgroundImage = global::Course_work.Properties.Resources.Reset;
-            this.ResetButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ResetButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ResetButton.FlatAppearance.BorderSize = 0;
-            this.ResetButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.ResetButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.ResetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ResetButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ResetButton.ForeColor = System.Drawing.Color.BlueViolet;
-            this.ResetButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ResetButton.Location = new System.Drawing.Point(629, 76);
-            this.ResetButton.Name = "ResetButton";
-            this.ResetButton.Size = new System.Drawing.Size(64, 48);
-            this.ResetButton.TabIndex = 29;
-            this.ResetButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.ResetButton.UseVisualStyleBackColor = false;
-            // 
-            // SearchButton
-            // 
-            this.SearchButton.BackColor = System.Drawing.Color.Transparent;
-            this.SearchButton.BackgroundImage = global::Course_work.Properties.Resources.Search;
-            this.SearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.SearchButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SearchButton.FlatAppearance.BorderSize = 0;
-            this.SearchButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.SearchButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SearchButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SearchButton.ForeColor = System.Drawing.Color.BlueViolet;
-            this.SearchButton.Location = new System.Drawing.Point(216, 76);
-            this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(64, 48);
-            this.SearchButton.TabIndex = 28;
-            this.SearchButton.UseVisualStyleBackColor = false;
-            // 
-            // DelButton
-            // 
-            this.DelButton.BackColor = System.Drawing.Color.Transparent;
-            this.DelButton.BackgroundImage = global::Course_work.Properties.Resources.Delete;
-            this.DelButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DelButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DelButton.FlatAppearance.BorderSize = 0;
-            this.DelButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.DelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.DelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DelButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DelButton.ForeColor = System.Drawing.Color.BlueViolet;
-            this.DelButton.Location = new System.Drawing.Point(146, 76);
-            this.DelButton.Name = "DelButton";
-            this.DelButton.Size = new System.Drawing.Size(64, 48);
-            this.DelButton.TabIndex = 27;
-            this.DelButton.UseVisualStyleBackColor = false;
-            // 
-            // EditButton
-            // 
-            this.EditButton.BackColor = System.Drawing.Color.Transparent;
-            this.EditButton.BackgroundImage = global::Course_work.Properties.Resources.Edit;
-            this.EditButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.EditButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EditButton.FlatAppearance.BorderSize = 0;
-            this.EditButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.EditButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EditButton.ForeColor = System.Drawing.Color.BlueViolet;
-            this.EditButton.Location = new System.Drawing.Point(76, 76);
-            this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(64, 48);
-            this.EditButton.TabIndex = 26;
-            this.EditButton.UseVisualStyleBackColor = false;
-            // 
-            // AddButton
-            // 
-            this.AddButton.BackColor = System.Drawing.Color.Transparent;
-            this.AddButton.BackgroundImage = global::Course_work.Properties.Resources.Add;
-            this.AddButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddButton.FlatAppearance.BorderSize = 0;
-            this.AddButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.AddButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AddButton.ForeColor = System.Drawing.Color.BlueViolet;
-            this.AddButton.Location = new System.Drawing.Point(6, 76);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(64, 48);
-            this.AddButton.TabIndex = 25;
-            this.AddButton.UseVisualStyleBackColor = false;
-            // 
-            // HeaderPanel
-            // 
-            this.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(26)))), ((int)(((byte)(33)))));
-            this.HeaderPanel.Location = new System.Drawing.Point(0, 60);
-            this.HeaderPanel.Name = "HeaderPanel";
-            this.HeaderPanel.Size = new System.Drawing.Size(696, 10);
-            this.HeaderPanel.TabIndex = 24;
-            // 
-            // LogOutButton
-            // 
-            this.LogOutButton.BackColor = System.Drawing.Color.Transparent;
-            this.LogOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.LogOutButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LogOutButton.FlatAppearance.BorderSize = 0;
-            this.LogOutButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.LogOutButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.LogOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LogOutButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LogOutButton.ForeColor = System.Drawing.Color.BlueViolet;
-            this.LogOutButton.Location = new System.Drawing.Point(596, 9);
-            this.LogOutButton.Name = "LogOutButton";
-            this.LogOutButton.Size = new System.Drawing.Size(97, 23);
-            this.LogOutButton.TabIndex = 23;
-            this.LogOutButton.Text = "Выйти";
-            this.LogOutButton.UseVisualStyleBackColor = false;
-            this.LogOutButton.Click += new System.EventHandler(this.LogOutButton_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::Course_work.Properties.Resources.Car;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.button2.Location = new System.Drawing.Point(-95, 228);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 61);
-            this.button2.TabIndex = 10;
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // UsersButton
             // 
@@ -400,6 +224,57 @@
             this.AuthPicture.TabIndex = 7;
             this.AuthPicture.TabStop = false;
             // 
+            // BodyPanel
+            // 
+            this.BodyPanel.BackgroundImage = global::Course_work.Properties.Resources.Background;
+            this.BodyPanel.Controls.Add(this.LogOutButton);
+            this.BodyPanel.Controls.Add(this.DataGridView);
+            this.BodyPanel.Controls.Add(this.pictureBox1);
+            this.BodyPanel.Controls.Add(this.SearchLabel);
+            this.BodyPanel.Controls.Add(this.SearchComboBox);
+            this.BodyPanel.Controls.Add(this.ResetButton);
+            this.BodyPanel.Controls.Add(this.SearchButton);
+            this.BodyPanel.Controls.Add(this.DelButton);
+            this.BodyPanel.Controls.Add(this.EditButton);
+            this.BodyPanel.Controls.Add(this.AddButton);
+            this.BodyPanel.Controls.Add(this.HeaderPanel);
+            this.BodyPanel.Controls.Add(this.button2);
+            this.BodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BodyPanel.Location = new System.Drawing.Point(104, 0);
+            this.BodyPanel.Name = "BodyPanel";
+            this.BodyPanel.Size = new System.Drawing.Size(696, 450);
+            this.BodyPanel.TabIndex = 0;
+            // 
+            // LogOutButton
+            // 
+            this.LogOutButton.BackColor = System.Drawing.Color.Transparent;
+            this.LogOutButton.BackgroundImage = global::Course_work.Properties.Resources.LogOut;
+            this.LogOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogOutButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LogOutButton.FlatAppearance.BorderSize = 0;
+            this.LogOutButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
+            this.LogOutButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
+            this.LogOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogOutButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LogOutButton.ForeColor = System.Drawing.Color.BlueViolet;
+            this.LogOutButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LogOutButton.Location = new System.Drawing.Point(632, 75);
+            this.LogOutButton.Name = "LogOutButton";
+            this.LogOutButton.Size = new System.Drawing.Size(64, 48);
+            this.LogOutButton.TabIndex = 34;
+            this.LogOutButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.LogOutButton.UseVisualStyleBackColor = false;
+            // 
+            // DataGridView
+            // 
+            this.DataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.DataGridView.Location = new System.Drawing.Point(0, 130);
+            this.DataGridView.Name = "DataGridView";
+            this.DataGridView.Size = new System.Drawing.Size(696, 320);
+            this.DataGridView.TabIndex = 33;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -414,6 +289,145 @@
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
             // 
+            // SearchLabel
+            // 
+            this.SearchLabel.AutoSize = true;
+            this.SearchLabel.BackColor = System.Drawing.Color.Transparent;
+            this.SearchLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SearchLabel.ForeColor = System.Drawing.Color.White;
+            this.SearchLabel.Location = new System.Drawing.Point(490, 76);
+            this.SearchLabel.Name = "SearchLabel";
+            this.SearchLabel.Size = new System.Drawing.Size(47, 16);
+            this.SearchLabel.TabIndex = 31;
+            this.SearchLabel.Text = "Поиск";
+            this.SearchLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // SearchComboBox
+            // 
+            this.SearchComboBox.FormattingEnabled = true;
+            this.SearchComboBox.Location = new System.Drawing.Point(451, 102);
+            this.SearchComboBox.Name = "SearchComboBox";
+            this.SearchComboBox.Size = new System.Drawing.Size(121, 21);
+            this.SearchComboBox.TabIndex = 30;
+            // 
+            // ResetButton
+            // 
+            this.ResetButton.BackColor = System.Drawing.Color.Transparent;
+            this.ResetButton.BackgroundImage = global::Course_work.Properties.Resources.Reset;
+            this.ResetButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ResetButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ResetButton.FlatAppearance.BorderSize = 0;
+            this.ResetButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
+            this.ResetButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
+            this.ResetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ResetButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ResetButton.ForeColor = System.Drawing.Color.BlueViolet;
+            this.ResetButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ResetButton.Location = new System.Drawing.Point(578, 75);
+            this.ResetButton.Name = "ResetButton";
+            this.ResetButton.Size = new System.Drawing.Size(64, 48);
+            this.ResetButton.TabIndex = 29;
+            this.ResetButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ResetButton.UseVisualStyleBackColor = false;
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.BackColor = System.Drawing.Color.Transparent;
+            this.SearchButton.BackgroundImage = global::Course_work.Properties.Resources.Search;
+            this.SearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SearchButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SearchButton.FlatAppearance.BorderSize = 0;
+            this.SearchButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
+            this.SearchButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
+            this.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SearchButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SearchButton.ForeColor = System.Drawing.Color.BlueViolet;
+            this.SearchButton.Location = new System.Drawing.Point(216, 76);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(64, 48);
+            this.SearchButton.TabIndex = 28;
+            this.SearchButton.UseVisualStyleBackColor = false;
+            // 
+            // DelButton
+            // 
+            this.DelButton.BackColor = System.Drawing.Color.Transparent;
+            this.DelButton.BackgroundImage = global::Course_work.Properties.Resources.Delete;
+            this.DelButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DelButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DelButton.FlatAppearance.BorderSize = 0;
+            this.DelButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
+            this.DelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
+            this.DelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DelButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelButton.ForeColor = System.Drawing.Color.BlueViolet;
+            this.DelButton.Location = new System.Drawing.Point(146, 76);
+            this.DelButton.Name = "DelButton";
+            this.DelButton.Size = new System.Drawing.Size(64, 48);
+            this.DelButton.TabIndex = 27;
+            this.DelButton.UseVisualStyleBackColor = false;
+            // 
+            // EditButton
+            // 
+            this.EditButton.BackColor = System.Drawing.Color.Transparent;
+            this.EditButton.BackgroundImage = global::Course_work.Properties.Resources.Edit;
+            this.EditButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.EditButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EditButton.FlatAppearance.BorderSize = 0;
+            this.EditButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
+            this.EditButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
+            this.EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EditButton.ForeColor = System.Drawing.Color.BlueViolet;
+            this.EditButton.Location = new System.Drawing.Point(76, 76);
+            this.EditButton.Name = "EditButton";
+            this.EditButton.Size = new System.Drawing.Size(64, 48);
+            this.EditButton.TabIndex = 26;
+            this.EditButton.UseVisualStyleBackColor = false;
+            // 
+            // AddButton
+            // 
+            this.AddButton.BackColor = System.Drawing.Color.Transparent;
+            this.AddButton.BackgroundImage = global::Course_work.Properties.Resources.Add;
+            this.AddButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddButton.FlatAppearance.BorderSize = 0;
+            this.AddButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
+            this.AddButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
+            this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AddButton.ForeColor = System.Drawing.Color.BlueViolet;
+            this.AddButton.Location = new System.Drawing.Point(6, 76);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(64, 48);
+            this.AddButton.TabIndex = 25;
+            this.AddButton.UseVisualStyleBackColor = false;
+            // 
+            // HeaderPanel
+            // 
+            this.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(26)))), ((int)(((byte)(33)))));
+            this.HeaderPanel.Location = new System.Drawing.Point(0, 60);
+            this.HeaderPanel.Name = "HeaderPanel";
+            this.HeaderPanel.Size = new System.Drawing.Size(696, 10);
+            this.HeaderPanel.TabIndex = 24;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = global::Course_work.Properties.Resources.Car;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.ForeColor = System.Drawing.Color.OrangeRed;
+            this.button2.Location = new System.Drawing.Point(-95, 228);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(95, 61);
+            this.button2.TabIndex = 10;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -425,9 +439,10 @@
             this.Name = "Menu";
             this.Text = "Menu";
             this.LeftPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.AuthPicture)).EndInit();
             this.BodyPanel.ResumeLayout(false);
             this.BodyPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AuthPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -446,7 +461,6 @@
         private System.Windows.Forms.Button ClientsButton;
         private System.Windows.Forms.Button AreaOfWorkButton;
         private System.Windows.Forms.Button CarsButton;
-        private System.Windows.Forms.Button LogOutButton;
         private System.Windows.Forms.Panel HeaderPanel;
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.Button DelButton;
@@ -456,6 +470,8 @@
         private System.Windows.Forms.Label SearchLabel;
         private System.Windows.Forms.ComboBox SearchComboBox;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView DataGridView;
+        private System.Windows.Forms.Button LogOutButton;
     }
 }
 

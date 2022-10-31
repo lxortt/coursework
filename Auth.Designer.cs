@@ -191,9 +191,9 @@
             this.PasswordField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.PasswordField.Location = new System.Drawing.Point(126, 128);
             this.PasswordField.Name = "PasswordField";
-            this.PasswordField.PasswordChar = '*';
             this.PasswordField.Size = new System.Drawing.Size(100, 21);
             this.PasswordField.TabIndex = 1;
+            this.PasswordField.UseSystemPasswordChar = true;
             // 
             // LoginField
             // 
@@ -203,6 +203,8 @@
             this.LoginField.Name = "LoginField";
             this.LoginField.Size = new System.Drawing.Size(100, 21);
             this.LoginField.TabIndex = 0;
+            this.LoginField.Enter += new System.EventHandler(this.LoginField_Enter);
+            this.LoginField.Leave += new System.EventHandler(this.LoginField_Leave);
             // 
             // Auth
             // 

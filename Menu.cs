@@ -18,6 +18,8 @@ namespace coursework
             InitializeComponent();
         }
 
+
+
         private void LogOutButton_Click(object sender, EventArgs e)
         {
             this.Close();

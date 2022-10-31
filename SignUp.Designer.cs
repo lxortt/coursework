@@ -158,7 +158,7 @@
             this.PhoneLabel.BackColor = System.Drawing.Color.Transparent;
             this.PhoneLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PhoneLabel.ForeColor = System.Drawing.Color.Violet;
-            this.PhoneLabel.Location = new System.Drawing.Point(48, 207);
+            this.PhoneLabel.Location = new System.Drawing.Point(48, 208);
             this.PhoneLabel.Name = "PhoneLabel";
             this.PhoneLabel.Size = new System.Drawing.Size(66, 16);
             this.PhoneLabel.TabIndex = 11;
@@ -224,9 +224,9 @@
             this.PasswordField.ForeColor = System.Drawing.SystemColors.WindowText;
             this.PasswordField.Location = new System.Drawing.Point(124, 124);
             this.PasswordField.Name = "PasswordField";
-            this.PasswordField.PasswordChar = '*';
             this.PasswordField.Size = new System.Drawing.Size(100, 21);
             this.PasswordField.TabIndex = 5;
+            this.PasswordField.UseSystemPasswordChar = true;
             // 
             // LoginField
             // 
