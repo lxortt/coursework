@@ -30,7 +30,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Auth));
+            this.AuthLabel = new System.Windows.Forms.Label();
+            this.HeaderPanel = new System.Windows.Forms.Panel();
             this.BodyPanel = new System.Windows.Forms.Panel();
+            this.FooterPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CreateLinkLabel = new System.Windows.Forms.LinkLabel();
             this.AuthButton = new System.Windows.Forms.Button();
             this.AuthPicture = new System.Windows.Forms.PictureBox();
@@ -38,21 +42,41 @@
             this.LoginLabel = new System.Windows.Forms.Label();
             this.PasswordField = new System.Windows.Forms.TextBox();
             this.LoginField = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.FooterPanel = new System.Windows.Forms.Panel();
-            this.AuthLabel = new System.Windows.Forms.Label();
-            this.HeaderPanel = new System.Windows.Forms.Panel();
-            this.BodyPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AuthPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.FooterPanel.SuspendLayout();
             this.HeaderPanel.SuspendLayout();
+            this.BodyPanel.SuspendLayout();
+            this.FooterPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AuthPicture)).BeginInit();
             this.SuspendLayout();
+            // 
+            // AuthLabel
+            // 
+            this.AuthLabel.AutoSize = true;
+            this.AuthLabel.BackColor = System.Drawing.Color.Transparent;
+            this.AuthLabel.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AuthLabel.ForeColor = System.Drawing.Color.White;
+            this.AuthLabel.Location = new System.Drawing.Point(91, 25);
+            this.AuthLabel.Name = "AuthLabel";
+            this.AuthLabel.Size = new System.Drawing.Size(155, 25);
+            this.AuthLabel.TabIndex = 2;
+            this.AuthLabel.Text = "Авторизация";
+            this.AuthLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // HeaderPanel
+            // 
+            this.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(26)))), ((int)(((byte)(33)))));
+            this.HeaderPanel.BackgroundImage = global::Course_work.Properties.Resources.Panel_Background;
+            this.HeaderPanel.Controls.Add(this.AuthLabel);
+            this.HeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.HeaderPanel.Location = new System.Drawing.Point(0, 0);
+            this.HeaderPanel.Name = "HeaderPanel";
+            this.HeaderPanel.Size = new System.Drawing.Size(334, 70);
+            this.HeaderPanel.TabIndex = 3;
             // 
             // BodyPanel
             // 
-            this.BodyPanel.BackColor = System.Drawing.Color.White;
-            this.BodyPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BodyPanel.BackgroundImage")));
+            this.BodyPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.BodyPanel.BackgroundImage = global::Course_work.Properties.Resources.Additional_Background;
             this.BodyPanel.Controls.Add(this.FooterPanel);
             this.BodyPanel.Controls.Add(this.CreateLinkLabel);
             this.BodyPanel.Controls.Add(this.AuthButton);
@@ -68,13 +92,36 @@
             this.BodyPanel.Size = new System.Drawing.Size(334, 416);
             this.BodyPanel.TabIndex = 0;
             // 
+            // FooterPanel
+            // 
+            this.FooterPanel.BackColor = System.Drawing.Color.Transparent;
+            this.FooterPanel.Controls.Add(this.pictureBox1);
+            this.FooterPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.FooterPanel.Location = new System.Drawing.Point(0, 281);
+            this.FooterPanel.Name = "FooterPanel";
+            this.FooterPanel.Size = new System.Drawing.Size(334, 135);
+            this.FooterPanel.TabIndex = 34;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(72, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(190, 190);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
             // CreateLinkLabel
             // 
             this.CreateLinkLabel.ActiveLinkColor = System.Drawing.Color.Transparent;
             this.CreateLinkLabel.AutoSize = true;
             this.CreateLinkLabel.BackColor = System.Drawing.Color.Transparent;
             this.CreateLinkLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.CreateLinkLabel.LinkColor = System.Drawing.Color.Coral;
+            this.CreateLinkLabel.LinkColor = System.Drawing.Color.White;
             this.CreateLinkLabel.Location = new System.Drawing.Point(35, 247);
             this.CreateLinkLabel.Name = "CreateLinkLabel";
             this.CreateLinkLabel.Size = new System.Drawing.Size(265, 16);
@@ -94,7 +141,7 @@
             this.AuthButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
             this.AuthButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AuthButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AuthButton.ForeColor = System.Drawing.Color.OrangeRed;
+            this.AuthButton.ForeColor = System.Drawing.Color.White;
             this.AuthButton.Location = new System.Drawing.Point(117, 200);
             this.AuthButton.Name = "AuthButton";
             this.AuthButton.Size = new System.Drawing.Size(100, 23);
@@ -123,7 +170,7 @@
             this.PasswordLabel.AutoSize = true;
             this.PasswordLabel.BackColor = System.Drawing.Color.Transparent;
             this.PasswordLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PasswordLabel.ForeColor = System.Drawing.Color.Violet;
+            this.PasswordLabel.ForeColor = System.Drawing.Color.White;
             this.PasswordLabel.Location = new System.Drawing.Point(139, 131);
             this.PasswordLabel.Name = "PasswordLabel";
             this.PasswordLabel.Size = new System.Drawing.Size(57, 16);
@@ -135,7 +182,7 @@
             this.LoginLabel.AutoSize = true;
             this.LoginLabel.BackColor = System.Drawing.Color.Transparent;
             this.LoginLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoginLabel.ForeColor = System.Drawing.Color.MediumPurple;
+            this.LoginLabel.ForeColor = System.Drawing.Color.White;
             this.LoginLabel.Location = new System.Drawing.Point(144, 80);
             this.LoginLabel.Name = "LoginLabel";
             this.LoginLabel.Size = new System.Drawing.Size(46, 16);
@@ -162,52 +209,6 @@
             this.LoginField.Enter += new System.EventHandler(this.LoginField_Enter);
             this.LoginField.Leave += new System.EventHandler(this.LoginField_Leave);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = global::Course_work.Properties.Resources.Saturn;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(72, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(190, 190);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 33;
-            this.pictureBox1.TabStop = false;
-            // 
-            // FooterPanel
-            // 
-            this.FooterPanel.BackColor = System.Drawing.Color.Transparent;
-            this.FooterPanel.Controls.Add(this.pictureBox1);
-            this.FooterPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.FooterPanel.Location = new System.Drawing.Point(0, 281);
-            this.FooterPanel.Name = "FooterPanel";
-            this.FooterPanel.Size = new System.Drawing.Size(334, 135);
-            this.FooterPanel.TabIndex = 34;
-            // 
-            // AuthLabel
-            // 
-            this.AuthLabel.AutoSize = true;
-            this.AuthLabel.BackColor = System.Drawing.Color.Transparent;
-            this.AuthLabel.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AuthLabel.ForeColor = System.Drawing.Color.White;
-            this.AuthLabel.Location = new System.Drawing.Point(91, 25);
-            this.AuthLabel.Name = "AuthLabel";
-            this.AuthLabel.Size = new System.Drawing.Size(155, 25);
-            this.AuthLabel.TabIndex = 2;
-            this.AuthLabel.Text = "Авторизация";
-            this.AuthLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // HeaderPanel
-            // 
-            this.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(26)))), ((int)(((byte)(33)))));
-            this.HeaderPanel.Controls.Add(this.AuthLabel);
-            this.HeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.HeaderPanel.Location = new System.Drawing.Point(0, 0);
-            this.HeaderPanel.Name = "HeaderPanel";
-            this.HeaderPanel.Size = new System.Drawing.Size(334, 70);
-            this.HeaderPanel.TabIndex = 3;
-            // 
             // Auth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,13 +219,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Auth";
             this.Text = "Auth";
-            this.BodyPanel.ResumeLayout(false);
-            this.BodyPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AuthPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.FooterPanel.ResumeLayout(false);
             this.HeaderPanel.ResumeLayout(false);
             this.HeaderPanel.PerformLayout();
+            this.BodyPanel.ResumeLayout(false);
+            this.BodyPanel.PerformLayout();
+            this.FooterPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AuthPicture)).EndInit();
             this.ResumeLayout(false);
 
         }

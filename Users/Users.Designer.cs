@@ -1,6 +1,6 @@
 ﻿namespace Course_work.Users
 {
-    partial class Users
+    partial class Accounts
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accounts));
             this.BodyPanel = new System.Windows.Forms.Panel();
             this.AccessLevelLabel = new System.Windows.Forms.Label();
             this.AccessLevelField = new System.Windows.Forms.TextBox();
@@ -131,6 +131,7 @@
             this.WorkPicture.BackColor = System.Drawing.Color.Transparent;
             this.WorkPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.WorkPicture.ErrorImage = null;
+            this.WorkPicture.Image = global::Course_work.Properties.Resources.Users;
             this.WorkPicture.InitialImage = null;
             this.WorkPicture.Location = new System.Drawing.Point(514, 55);
             this.WorkPicture.Name = "WorkPicture";

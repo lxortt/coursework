@@ -223,7 +223,7 @@
             this.CreatePicture.ErrorImage = null;
             this.CreatePicture.Image = ((System.Drawing.Image)(resources.GetObject("CreatePicture.Image")));
             this.CreatePicture.InitialImage = null;
-            this.CreatePicture.Location = new System.Drawing.Point(134, 6);
+            this.CreatePicture.Location = new System.Drawing.Point(135, 6);
             this.CreatePicture.Name = "CreatePicture";
             this.CreatePicture.Size = new System.Drawing.Size(64, 64);
             this.CreatePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

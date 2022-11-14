@@ -1,6 +1,6 @@
 ﻿namespace Course_work
 {
-    partial class AreaofWork
+    partial class AreaOfWork
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AreaofWork));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AreaOfWork));
             this.BodyPanel = new System.Windows.Forms.Panel();
             this.AreaOfWorkLabel = new System.Windows.Forms.Label();
             this.CancelButton = new System.Windows.Forms.Button();

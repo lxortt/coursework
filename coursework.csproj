@@ -39,6 +39,9 @@
     <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
       <HintPath>packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
     </Reference>
@@ -102,11 +105,11 @@
     <Compile Include="Clients\Clients.Designer.cs">
       <DependentUpon>Clients.cs</DependentUpon>
     </Compile>
-    <Compile Include="AreaofWork\AreaofWork.cs">
+    <Compile Include="AreaofWork\AreaOfWork.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AreaofWork\AreaofWork.Designer.cs">
-      <DependentUpon>AreaofWork.cs</DependentUpon>
+    <Compile Include="AreaofWork\AreaOfWork.Designer.cs">
+      <DependentUpon>AreaOfWork.cs</DependentUpon>
     </Compile>
     <Compile Include="Insurance\Insurance.cs">
       <SubType>Form</SubType>
@@ -146,8 +149,8 @@
     <Compile Include="Users\Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AreaofWork\AreaofWork.resx">
-      <DependentUpon>AreaofWork.cs</DependentUpon>
+    <EmbeddedResource Include="AreaofWork\AreaOfWork.resx">
+      <DependentUpon>AreaOfWork.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Auth.resx">
       <DependentUpon>Auth.cs</DependentUpon>
@@ -265,6 +268,84 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LogOut-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\811239ef31c1e6d850bebbb9bf940f34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background-6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PanelBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38285a2e0a4a5e43775badc3a87abd7b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3r432.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r3r5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Без имени-PhotoRoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-AJz600BRkVXED.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-HSQLmPK3pLs7kW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-gaXoKQ3TMifJsZ0R.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-N9kUksNXvYEd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-sj71858xFHx.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5555555.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\765756765.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-KLwgycn8VAkLxdn1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\63233333.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG5.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

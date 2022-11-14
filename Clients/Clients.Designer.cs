@@ -87,7 +87,7 @@
             this.DriversLicenseLabel.BackColor = System.Drawing.Color.Transparent;
             this.DriversLicenseLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DriversLicenseLabel.ForeColor = System.Drawing.Color.Violet;
-            this.DriversLicenseLabel.Location = new System.Drawing.Point(105, 359);
+            this.DriversLicenseLabel.Location = new System.Drawing.Point(97, 260);
             this.DriversLicenseLabel.Name = "DriversLicenseLabel";
             this.DriversLicenseLabel.Size = new System.Drawing.Size(142, 16);
             this.DriversLicenseLabel.TabIndex = 24;
@@ -97,7 +97,7 @@
             // 
             this.DriversLicenseField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.DriversLicenseField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.DriversLicenseField.Location = new System.Drawing.Point(262, 358);
+            this.DriversLicenseField.Location = new System.Drawing.Point(262, 259);
             this.DriversLicenseField.Name = "DriversLicenseField";
             this.DriversLicenseField.Size = new System.Drawing.Size(187, 21);
             this.DriversLicenseField.TabIndex = 23;
@@ -163,7 +163,7 @@
             this.InsurancePaymentLabel.BackColor = System.Drawing.Color.Transparent;
             this.InsurancePaymentLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.InsurancePaymentLabel.ForeColor = System.Drawing.Color.Violet;
-            this.InsurancePaymentLabel.Location = new System.Drawing.Point(107, 312);
+            this.InsurancePaymentLabel.Location = new System.Drawing.Point(107, 359);
             this.InsurancePaymentLabel.Name = "InsurancePaymentLabel";
             this.InsurancePaymentLabel.Size = new System.Drawing.Size(140, 16);
             this.InsurancePaymentLabel.TabIndex = 19;
@@ -187,7 +187,7 @@
             this.InsurancePolicyLabel.BackColor = System.Drawing.Color.Transparent;
             this.InsurancePolicyLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.InsurancePolicyLabel.ForeColor = System.Drawing.Color.Violet;
-            this.InsurancePolicyLabel.Location = new System.Drawing.Point(138, 259);
+            this.InsurancePolicyLabel.Location = new System.Drawing.Point(138, 306);
             this.InsurancePolicyLabel.Name = "InsurancePolicyLabel";
             this.InsurancePolicyLabel.Size = new System.Drawing.Size(101, 16);
             this.InsurancePolicyLabel.TabIndex = 16;
@@ -209,7 +209,7 @@
             // 
             this.InsurancePaymentField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.InsurancePaymentField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.InsurancePaymentField.Location = new System.Drawing.Point(262, 311);
+            this.InsurancePaymentField.Location = new System.Drawing.Point(262, 358);
             this.InsurancePaymentField.Name = "InsurancePaymentField";
             this.InsurancePaymentField.Size = new System.Drawing.Size(187, 21);
             this.InsurancePaymentField.TabIndex = 14;
@@ -218,7 +218,7 @@
             // 
             this.InsurancePolicyField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.InsurancePolicyField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.InsurancePolicyField.Location = new System.Drawing.Point(262, 259);
+            this.InsurancePolicyField.Location = new System.Drawing.Point(262, 306);
             this.InsurancePolicyField.Name = "InsurancePolicyField";
             this.InsurancePolicyField.Size = new System.Drawing.Size(187, 21);
             this.InsurancePolicyField.TabIndex = 13;

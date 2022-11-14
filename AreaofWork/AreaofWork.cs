@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Course_work
 {
-    public partial class AreaofWork : Form
+    public partial class AreaOfWork : Form
     {
-        public AreaofWork()
+        public AreaOfWork()
         {
             InitializeComponent();
         }

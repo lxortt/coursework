@@ -163,7 +163,7 @@
             this.PassportLabel.BackColor = System.Drawing.Color.Transparent;
             this.PassportLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PassportLabel.ForeColor = System.Drawing.Color.Violet;
-            this.PassportLabel.Location = new System.Drawing.Point(173, 312);
+            this.PassportLabel.Location = new System.Drawing.Point(173, 258);
             this.PassportLabel.Name = "PassportLabel";
             this.PassportLabel.Size = new System.Drawing.Size(63, 16);
             this.PassportLabel.TabIndex = 19;
@@ -187,7 +187,7 @@
             this.SalaryLabel.BackColor = System.Drawing.Color.Transparent;
             this.SalaryLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SalaryLabel.ForeColor = System.Drawing.Color.Violet;
-            this.SalaryLabel.Location = new System.Drawing.Point(106, 260);
+            this.SalaryLabel.Location = new System.Drawing.Point(108, 313);
             this.SalaryLabel.Name = "SalaryLabel";
             this.SalaryLabel.Size = new System.Drawing.Size(130, 16);
             this.SalaryLabel.TabIndex = 16;
@@ -209,7 +209,7 @@
             // 
             this.PassportField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.PassportField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.PassportField.Location = new System.Drawing.Point(261, 311);
+            this.PassportField.Location = new System.Drawing.Point(261, 257);
             this.PassportField.Name = "PassportField";
             this.PassportField.Size = new System.Drawing.Size(187, 21);
             this.PassportField.TabIndex = 14;
@@ -218,7 +218,7 @@
             // 
             this.SalaryField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.SalaryField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.SalaryField.Location = new System.Drawing.Point(261, 259);
+            this.SalaryField.Location = new System.Drawing.Point(261, 312);
             this.SalaryField.Name = "SalaryField";
             this.SalaryField.Size = new System.Drawing.Size(187, 21);
             this.SalaryField.TabIndex = 13;

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Course_work.Users
 {
-    public partial class Users : Form
+    public partial class Accounts : Form
     {
-        public Users()
+        public Accounts()
         {
             InitializeComponent();
         }
