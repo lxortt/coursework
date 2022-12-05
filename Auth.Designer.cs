@@ -36,12 +36,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CreateLinkLabel = new System.Windows.Forms.LinkLabel();
             this.AuthPicture = new System.Windows.Forms.PictureBox();
-            this.PasswordLabel = new System.Windows.Forms.Label();
-            this.LoginLabel = new System.Windows.Forms.Label();
-            this.PasswordField = new System.Windows.Forms.TextBox();
-            this.LoginField = new System.Windows.Forms.TextBox();
             this.HeaderPanel = new System.Windows.Forms.Panel();
             this.AuthLabel = new System.Windows.Forms.Label();
+            this.LoginField = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PasswordField = new Guna.UI2.WinForms.Guna2TextBox();
             this.BodyPanel.SuspendLayout();
             this.FooterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,14 +51,12 @@
             // 
             this.BodyPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.BodyPanel.BackgroundImage = global::Course_work.Properties.Resources.Additional_Background;
+            this.BodyPanel.Controls.Add(this.PasswordField);
+            this.BodyPanel.Controls.Add(this.LoginField);
             this.BodyPanel.Controls.Add(this.AuthButton);
             this.BodyPanel.Controls.Add(this.FooterPanel);
             this.BodyPanel.Controls.Add(this.CreateLinkLabel);
             this.BodyPanel.Controls.Add(this.AuthPicture);
-            this.BodyPanel.Controls.Add(this.PasswordLabel);
-            this.BodyPanel.Controls.Add(this.LoginLabel);
-            this.BodyPanel.Controls.Add(this.PasswordField);
-            this.BodyPanel.Controls.Add(this.LoginField);
             this.BodyPanel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BodyPanel.Location = new System.Drawing.Point(0, 70);
@@ -119,7 +115,7 @@
             this.CreateLinkLabel.LinkColor = System.Drawing.Color.White;
             this.CreateLinkLabel.Location = new System.Drawing.Point(35, 247);
             this.CreateLinkLabel.Name = "CreateLinkLabel";
-            this.CreateLinkLabel.Size = new System.Drawing.Size(265, 16);
+            this.CreateLinkLabel.Size = new System.Drawing.Size(266, 16);
             this.CreateLinkLabel.TabIndex = 6;
             this.CreateLinkLabel.TabStop = true;
             this.CreateLinkLabel.Text = "Нет учётной записи? Зарегистрируйся!";
@@ -140,50 +136,6 @@
             this.AuthPicture.TabIndex = 2;
             this.AuthPicture.TabStop = false;
             this.AuthPicture.Click += new System.EventHandler(this.AuthPicture_Click);
-            // 
-            // PasswordLabel
-            // 
-            this.PasswordLabel.AutoSize = true;
-            this.PasswordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.PasswordLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PasswordLabel.ForeColor = System.Drawing.Color.White;
-            this.PasswordLabel.Location = new System.Drawing.Point(139, 131);
-            this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(57, 16);
-            this.PasswordLabel.TabIndex = 4;
-            this.PasswordLabel.Text = "Пароль";
-            // 
-            // LoginLabel
-            // 
-            this.LoginLabel.AutoSize = true;
-            this.LoginLabel.BackColor = System.Drawing.Color.Transparent;
-            this.LoginLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoginLabel.ForeColor = System.Drawing.Color.White;
-            this.LoginLabel.Location = new System.Drawing.Point(144, 80);
-            this.LoginLabel.Name = "LoginLabel";
-            this.LoginLabel.Size = new System.Drawing.Size(46, 16);
-            this.LoginLabel.TabIndex = 3;
-            this.LoginLabel.Text = "Логин";
-            // 
-            // PasswordField
-            // 
-            this.PasswordField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.PasswordField.Location = new System.Drawing.Point(117, 150);
-            this.PasswordField.Name = "PasswordField";
-            this.PasswordField.Size = new System.Drawing.Size(100, 21);
-            this.PasswordField.TabIndex = 1;
-            this.PasswordField.UseSystemPasswordChar = true;
-            // 
-            // LoginField
-            // 
-            this.LoginField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoginField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.LoginField.Location = new System.Drawing.Point(117, 100);
-            this.LoginField.Name = "LoginField";
-            this.LoginField.Size = new System.Drawing.Size(100, 21);
-            this.LoginField.TabIndex = 0;
-            this.LoginField.Enter += new System.EventHandler(this.LoginField_Enter);
-            this.LoginField.Leave += new System.EventHandler(this.LoginField_Leave);
             // 
             // HeaderPanel
             // 
@@ -209,6 +161,45 @@
             this.AuthLabel.Text = "Авторизация";
             this.AuthLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // LoginField
+            // 
+            this.LoginField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LoginField.DefaultText = "";
+            this.LoginField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.LoginField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.LoginField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LoginField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LoginField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LoginField.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.LoginField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LoginField.Location = new System.Drawing.Point(75, 93);
+            this.LoginField.Name = "LoginField";
+            this.LoginField.PasswordChar = '\0';
+            this.LoginField.PlaceholderText = "Логин";
+            this.LoginField.SelectedText = "";
+            this.LoginField.Size = new System.Drawing.Size(187, 21);
+            this.LoginField.TabIndex = 36;
+            // 
+            // PasswordField
+            // 
+            this.PasswordField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PasswordField.DefaultText = "";
+            this.PasswordField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PasswordField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PasswordField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordField.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PasswordField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordField.Location = new System.Drawing.Point(75, 143);
+            this.PasswordField.Name = "PasswordField";
+            this.PasswordField.PasswordChar = '●';
+            this.PasswordField.PlaceholderText = "Пароль";
+            this.PasswordField.SelectedText = "";
+            this.PasswordField.Size = new System.Drawing.Size(187, 21);
+            this.PasswordField.TabIndex = 37;
+            this.PasswordField.UseSystemPasswordChar = true;
+            // 
             // Auth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,10 +223,6 @@
 
         #endregion
         private System.Windows.Forms.Panel BodyPanel;
-        private System.Windows.Forms.TextBox PasswordField;
-        private System.Windows.Forms.TextBox LoginField;
-        private System.Windows.Forms.Label PasswordLabel;
-        private System.Windows.Forms.Label LoginLabel;
         private System.Windows.Forms.PictureBox AuthPicture;
         private System.Windows.Forms.LinkLabel CreateLinkLabel;
         private System.Windows.Forms.Panel FooterPanel;
@@ -243,5 +230,7 @@
         private System.Windows.Forms.Label AuthLabel;
         private System.Windows.Forms.Panel HeaderPanel;
         private Guna.UI2.WinForms.Guna2Button AuthButton;
+        private Guna.UI2.WinForms.Guna2TextBox PasswordField;
+        private Guna.UI2.WinForms.Guna2TextBox LoginField;
     }
 }

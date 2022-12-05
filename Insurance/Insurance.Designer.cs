@@ -35,18 +35,12 @@
             this.InsuranceLabel = new System.Windows.Forms.Label();
             this.InsurancePicture = new System.Windows.Forms.PictureBox();
             this.LeftPanel = new System.Windows.Forms.Panel();
-            this.TermOfInsuranceLabel = new System.Windows.Forms.Label();
-            this.InsuranceCompanyLabel = new System.Windows.Forms.Label();
-            this.DateOfInsuranceLabel = new System.Windows.Forms.Label();
-            this.InsuranceTypeLabel = new System.Windows.Forms.Label();
-            this.TermOfInsuranceField = new System.Windows.Forms.TextBox();
-            this.DateOfInsuranceField = new System.Windows.Forms.TextBox();
-            this.InsurancePolicyLabel = new System.Windows.Forms.Label();
-            this.FIOLabel = new System.Windows.Forms.Label();
-            this.InsuranceTypeField = new System.Windows.Forms.TextBox();
-            this.InsuranceCompanyField = new System.Windows.Forms.TextBox();
-            this.InsurancePolicyField = new System.Windows.Forms.TextBox();
-            this.FIOField = new System.Windows.Forms.TextBox();
+            this.FIOField = new Guna.UI2.WinForms.Guna2TextBox();
+            this.InsurancePolicyField = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DateOfInsuranceField = new Guna.UI2.WinForms.Guna2TextBox();
+            this.InsuranceCompanyField = new Guna.UI2.WinForms.Guna2TextBox();
+            this.InsuranceTypeField = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TermOfInsuranceField = new Guna.UI2.WinForms.Guna2TextBox();
             this.BodyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InsurancePicture)).BeginInit();
             this.SuspendLayout();
@@ -54,23 +48,17 @@
             // BodyPanel
             // 
             this.BodyPanel.BackgroundImage = global::Course_work.Properties.Resources.Main_Background;
+            this.BodyPanel.Controls.Add(this.TermOfInsuranceField);
+            this.BodyPanel.Controls.Add(this.InsuranceTypeField);
+            this.BodyPanel.Controls.Add(this.InsuranceCompanyField);
+            this.BodyPanel.Controls.Add(this.DateOfInsuranceField);
+            this.BodyPanel.Controls.Add(this.InsurancePolicyField);
+            this.BodyPanel.Controls.Add(this.FIOField);
             this.BodyPanel.Controls.Add(this.CancelButton);
             this.BodyPanel.Controls.Add(this.AddButton);
             this.BodyPanel.Controls.Add(this.InsuranceLabel);
             this.BodyPanel.Controls.Add(this.InsurancePicture);
             this.BodyPanel.Controls.Add(this.LeftPanel);
-            this.BodyPanel.Controls.Add(this.TermOfInsuranceLabel);
-            this.BodyPanel.Controls.Add(this.InsuranceCompanyLabel);
-            this.BodyPanel.Controls.Add(this.DateOfInsuranceLabel);
-            this.BodyPanel.Controls.Add(this.InsuranceTypeLabel);
-            this.BodyPanel.Controls.Add(this.TermOfInsuranceField);
-            this.BodyPanel.Controls.Add(this.DateOfInsuranceField);
-            this.BodyPanel.Controls.Add(this.InsurancePolicyLabel);
-            this.BodyPanel.Controls.Add(this.FIOLabel);
-            this.BodyPanel.Controls.Add(this.InsuranceTypeField);
-            this.BodyPanel.Controls.Add(this.InsuranceCompanyField);
-            this.BodyPanel.Controls.Add(this.InsurancePolicyField);
-            this.BodyPanel.Controls.Add(this.FIOField);
             this.BodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BodyPanel.Location = new System.Drawing.Point(0, 0);
             this.BodyPanel.Name = "BodyPanel";
@@ -135,7 +123,7 @@
             this.InsurancePicture.ErrorImage = null;
             this.InsurancePicture.Image = global::Course_work.Properties.Resources.Insurance;
             this.InsurancePicture.InitialImage = null;
-            this.InsurancePicture.Location = new System.Drawing.Point(505, 55);
+            this.InsurancePicture.Location = new System.Drawing.Point(505, 44);
             this.InsurancePicture.Name = "InsurancePicture";
             this.InsurancePicture.Size = new System.Drawing.Size(256, 256);
             this.InsurancePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -152,131 +140,119 @@
             this.LeftPanel.Size = new System.Drawing.Size(95, 461);
             this.LeftPanel.TabIndex = 20;
             // 
-            // TermOfInsuranceLabel
+            // FIOField
             // 
-            this.TermOfInsuranceLabel.AutoSize = true;
-            this.TermOfInsuranceLabel.BackColor = System.Drawing.Color.Transparent;
-            this.TermOfInsuranceLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TermOfInsuranceLabel.ForeColor = System.Drawing.Color.Violet;
-            this.TermOfInsuranceLabel.Location = new System.Drawing.Point(124, 311);
-            this.TermOfInsuranceLabel.Name = "TermOfInsuranceLabel";
-            this.TermOfInsuranceLabel.Size = new System.Drawing.Size(127, 16);
-            this.TermOfInsuranceLabel.TabIndex = 19;
-            this.TermOfInsuranceLabel.Text = "Срок страхования";
-            // 
-            // InsuranceCompanyLabel
-            // 
-            this.InsuranceCompanyLabel.AutoSize = true;
-            this.InsuranceCompanyLabel.BackColor = System.Drawing.Color.Transparent;
-            this.InsuranceCompanyLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.InsuranceCompanyLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.InsuranceCompanyLabel.Location = new System.Drawing.Point(105, 210);
-            this.InsuranceCompanyLabel.Name = "InsuranceCompanyLabel";
-            this.InsuranceCompanyLabel.Size = new System.Drawing.Size(146, 16);
-            this.InsuranceCompanyLabel.TabIndex = 18;
-            this.InsuranceCompanyLabel.Text = "Страховая компания";
-            // 
-            // DateOfInsuranceLabel
-            // 
-            this.DateOfInsuranceLabel.AutoSize = true;
-            this.DateOfInsuranceLabel.BackColor = System.Drawing.Color.Transparent;
-            this.DateOfInsuranceLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DateOfInsuranceLabel.ForeColor = System.Drawing.Color.Violet;
-            this.DateOfInsuranceLabel.Location = new System.Drawing.Point(123, 160);
-            this.DateOfInsuranceLabel.Name = "DateOfInsuranceLabel";
-            this.DateOfInsuranceLabel.Size = new System.Drawing.Size(128, 16);
-            this.DateOfInsuranceLabel.TabIndex = 16;
-            this.DateOfInsuranceLabel.Text = "Дата страхования";
-            // 
-            // InsuranceTypeLabel
-            // 
-            this.InsuranceTypeLabel.AutoSize = true;
-            this.InsuranceTypeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.InsuranceTypeLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.InsuranceTypeLabel.ForeColor = System.Drawing.Color.Violet;
-            this.InsuranceTypeLabel.Location = new System.Drawing.Point(132, 262);
-            this.InsuranceTypeLabel.Name = "InsuranceTypeLabel";
-            this.InsuranceTypeLabel.Size = new System.Drawing.Size(119, 16);
-            this.InsuranceTypeLabel.TabIndex = 15;
-            this.InsuranceTypeLabel.Text = "Вид страхования";
-            // 
-            // TermOfInsuranceField
-            // 
-            this.TermOfInsuranceField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.TermOfInsuranceField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TermOfInsuranceField.Location = new System.Drawing.Point(268, 311);
-            this.TermOfInsuranceField.Name = "TermOfInsuranceField";
-            this.TermOfInsuranceField.Size = new System.Drawing.Size(187, 21);
-            this.TermOfInsuranceField.TabIndex = 14;
-            // 
-            // DateOfInsuranceField
-            // 
-            this.DateOfInsuranceField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.DateOfInsuranceField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.DateOfInsuranceField.Location = new System.Drawing.Point(268, 159);
-            this.DateOfInsuranceField.Name = "DateOfInsuranceField";
-            this.DateOfInsuranceField.Size = new System.Drawing.Size(187, 21);
-            this.DateOfInsuranceField.TabIndex = 13;
-            // 
-            // InsurancePolicyLabel
-            // 
-            this.InsurancePolicyLabel.AutoSize = true;
-            this.InsurancePolicyLabel.BackColor = System.Drawing.Color.Transparent;
-            this.InsurancePolicyLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.InsurancePolicyLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.InsurancePolicyLabel.Location = new System.Drawing.Point(132, 109);
-            this.InsurancePolicyLabel.Name = "InsurancePolicyLabel";
-            this.InsurancePolicyLabel.Size = new System.Drawing.Size(119, 16);
-            this.InsurancePolicyLabel.TabIndex = 10;
-            this.InsurancePolicyLabel.Text = "Страховой полис";
-            // 
-            // FIOLabel
-            // 
-            this.FIOLabel.AutoSize = true;
-            this.FIOLabel.BackColor = System.Drawing.Color.Transparent;
-            this.FIOLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FIOLabel.ForeColor = System.Drawing.Color.MediumPurple;
-            this.FIOLabel.Location = new System.Drawing.Point(210, 60);
-            this.FIOLabel.Name = "FIOLabel";
-            this.FIOLabel.Size = new System.Drawing.Size(35, 16);
-            this.FIOLabel.TabIndex = 8;
-            this.FIOLabel.Text = "ФИО";
-            // 
-            // InsuranceTypeField
-            // 
-            this.InsuranceTypeField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.InsuranceTypeField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.InsuranceTypeField.Location = new System.Drawing.Point(268, 261);
-            this.InsuranceTypeField.Name = "InsuranceTypeField";
-            this.InsuranceTypeField.Size = new System.Drawing.Size(187, 21);
-            this.InsuranceTypeField.TabIndex = 7;
-            // 
-            // InsuranceCompanyField
-            // 
-            this.InsuranceCompanyField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.InsuranceCompanyField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.InsuranceCompanyField.Location = new System.Drawing.Point(268, 209);
-            this.InsuranceCompanyField.Name = "InsuranceCompanyField";
-            this.InsuranceCompanyField.Size = new System.Drawing.Size(187, 21);
-            this.InsuranceCompanyField.TabIndex = 6;
+            this.FIOField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FIOField.DefaultText = "";
+            this.FIOField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.FIOField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.FIOField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FIOField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FIOField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FIOField.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.FIOField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FIOField.Location = new System.Drawing.Point(527, 60);
+            this.FIOField.Name = "FIOField";
+            this.FIOField.PasswordChar = '\0';
+            this.FIOField.PlaceholderText = "ФИО";
+            this.FIOField.SelectedText = "";
+            this.FIOField.Size = new System.Drawing.Size(187, 21);
+            this.FIOField.TabIndex = 31;
             // 
             // InsurancePolicyField
             // 
-            this.InsurancePolicyField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.InsurancePolicyField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.InsurancePolicyField.Location = new System.Drawing.Point(268, 108);
+            this.InsurancePolicyField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.InsurancePolicyField.DefaultText = "";
+            this.InsurancePolicyField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.InsurancePolicyField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.InsurancePolicyField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.InsurancePolicyField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.InsurancePolicyField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.InsurancePolicyField.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.InsurancePolicyField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.InsurancePolicyField.Location = new System.Drawing.Point(527, 109);
             this.InsurancePolicyField.Name = "InsurancePolicyField";
+            this.InsurancePolicyField.PasswordChar = '\0';
+            this.InsurancePolicyField.PlaceholderText = "Страховой  полис";
+            this.InsurancePolicyField.SelectedText = "";
             this.InsurancePolicyField.Size = new System.Drawing.Size(187, 21);
-            this.InsurancePolicyField.TabIndex = 5;
+            this.InsurancePolicyField.TabIndex = 32;
             // 
-            // FIOField
+            // DateOfInsuranceField
             // 
-            this.FIOField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.FIOField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.FIOField.Location = new System.Drawing.Point(268, 55);
-            this.FIOField.Name = "FIOField";
-            this.FIOField.Size = new System.Drawing.Size(187, 21);
-            this.FIOField.TabIndex = 4;
+            this.DateOfInsuranceField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DateOfInsuranceField.DefaultText = "";
+            this.DateOfInsuranceField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.DateOfInsuranceField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.DateOfInsuranceField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DateOfInsuranceField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DateOfInsuranceField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DateOfInsuranceField.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateOfInsuranceField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DateOfInsuranceField.Location = new System.Drawing.Point(473, 155);
+            this.DateOfInsuranceField.Name = "DateOfInsuranceField";
+            this.DateOfInsuranceField.PasswordChar = '\0';
+            this.DateOfInsuranceField.PlaceholderText = "Дата страхования";
+            this.DateOfInsuranceField.SelectedText = "";
+            this.DateOfInsuranceField.Size = new System.Drawing.Size(187, 21);
+            this.DateOfInsuranceField.TabIndex = 33;
+            // 
+            // InsuranceCompanyField
+            // 
+            this.InsuranceCompanyField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.InsuranceCompanyField.DefaultText = "";
+            this.InsuranceCompanyField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.InsuranceCompanyField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.InsuranceCompanyField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.InsuranceCompanyField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.InsuranceCompanyField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.InsuranceCompanyField.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.InsuranceCompanyField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.InsuranceCompanyField.Location = new System.Drawing.Point(536, 220);
+            this.InsuranceCompanyField.Name = "InsuranceCompanyField";
+            this.InsuranceCompanyField.PasswordChar = '\0';
+            this.InsuranceCompanyField.PlaceholderText = "Страховая компания";
+            this.InsuranceCompanyField.SelectedText = "";
+            this.InsuranceCompanyField.Size = new System.Drawing.Size(187, 21);
+            this.InsuranceCompanyField.TabIndex = 34;
+            // 
+            // InsuranceTypeField
+            // 
+            this.InsuranceTypeField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.InsuranceTypeField.DefaultText = "";
+            this.InsuranceTypeField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.InsuranceTypeField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.InsuranceTypeField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.InsuranceTypeField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.InsuranceTypeField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.InsuranceTypeField.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.InsuranceTypeField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.InsuranceTypeField.Location = new System.Drawing.Point(527, 257);
+            this.InsuranceTypeField.Name = "InsuranceTypeField";
+            this.InsuranceTypeField.PasswordChar = '\0';
+            this.InsuranceTypeField.PlaceholderText = "Вид страхования";
+            this.InsuranceTypeField.SelectedText = "";
+            this.InsuranceTypeField.Size = new System.Drawing.Size(187, 21);
+            this.InsuranceTypeField.TabIndex = 35;
+            // 
+            // TermOfInsuranceField
+            // 
+            this.TermOfInsuranceField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TermOfInsuranceField.DefaultText = "";
+            this.TermOfInsuranceField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TermOfInsuranceField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TermOfInsuranceField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TermOfInsuranceField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TermOfInsuranceField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TermOfInsuranceField.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TermOfInsuranceField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TermOfInsuranceField.Location = new System.Drawing.Point(505, 306);
+            this.TermOfInsuranceField.Name = "TermOfInsuranceField";
+            this.TermOfInsuranceField.PasswordChar = '\0';
+            this.TermOfInsuranceField.PlaceholderText = "Срок страхования";
+            this.TermOfInsuranceField.SelectedText = "";
+            this.TermOfInsuranceField.Size = new System.Drawing.Size(187, 21);
+            this.TermOfInsuranceField.TabIndex = 36;
             // 
             // Insurance
             // 
@@ -299,21 +275,15 @@
 
         private System.Windows.Forms.Panel BodyPanel;
         private System.Windows.Forms.PictureBox InsurancePicture;
-        private System.Windows.Forms.Label TermOfInsuranceLabel;
-        private System.Windows.Forms.Label InsuranceCompanyLabel;
-        private System.Windows.Forms.Label DateOfInsuranceLabel;
-        private System.Windows.Forms.Label InsuranceTypeLabel;
-        private System.Windows.Forms.TextBox TermOfInsuranceField;
-        private System.Windows.Forms.TextBox DateOfInsuranceField;
-        private System.Windows.Forms.Label InsurancePolicyLabel;
-        private System.Windows.Forms.Label FIOLabel;
-        private System.Windows.Forms.TextBox InsuranceTypeField;
-        private System.Windows.Forms.TextBox InsuranceCompanyField;
-        private System.Windows.Forms.TextBox InsurancePolicyField;
-        private System.Windows.Forms.TextBox FIOField;
         private System.Windows.Forms.Label InsuranceLabel;
         private System.Windows.Forms.Panel LeftPanel;
         private Guna.UI2.WinForms.Guna2Button AddButton;
         private Guna.UI2.WinForms.Guna2Button CancelButton;
+        private Guna.UI2.WinForms.Guna2TextBox TermOfInsuranceField;
+        private Guna.UI2.WinForms.Guna2TextBox InsuranceTypeField;
+        private Guna.UI2.WinForms.Guna2TextBox InsuranceCompanyField;
+        private Guna.UI2.WinForms.Guna2TextBox DateOfInsuranceField;
+        private Guna.UI2.WinForms.Guna2TextBox InsurancePolicyField;
+        private Guna.UI2.WinForms.Guna2TextBox FIOField;
     }
 }

@@ -35,20 +35,16 @@
             this.ClientCodeComboBox = new System.Windows.Forms.ComboBox();
             this.VehicleCodeComboBox = new System.Windows.Forms.ComboBox();
             this.OrderCodeComboBox = new System.Windows.Forms.ComboBox();
-            this.InsurancePaymentLabel = new System.Windows.Forms.Label();
-            this.InsurancePaymentField = new System.Windows.Forms.TextBox();
             this.PersonalLabel = new System.Windows.Forms.Label();
             this.OrdersPicture = new System.Windows.Forms.PictureBox();
             this.LeftPanel = new System.Windows.Forms.Panel();
-            this.DeadlineLabel = new System.Windows.Forms.Label();
             this.ClientCodeLabel = new System.Windows.Forms.Label();
-            this.RepairCostLabel = new System.Windows.Forms.Label();
-            this.ReceiptDateLabel = new System.Windows.Forms.Label();
-            this.DeadlineField = new System.Windows.Forms.TextBox();
-            this.RepairCostField = new System.Windows.Forms.TextBox();
             this.VehicleCodeLabel = new System.Windows.Forms.Label();
             this.OrderCodeLabel = new System.Windows.Forms.Label();
-            this.ReceiptDateField = new System.Windows.Forms.TextBox();
+            this.ReceiptDateField = new Guna.UI2.WinForms.Guna2TextBox();
+            this.RepairCostField = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DeadlineField = new Guna.UI2.WinForms.Guna2TextBox();
+            this.InsurancePaymentField = new Guna.UI2.WinForms.Guna2TextBox();
             this.BodyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrdersPicture)).BeginInit();
             this.SuspendLayout();
@@ -56,25 +52,21 @@
             // BodyPanel
             // 
             this.BodyPanel.BackgroundImage = global::Course_work.Properties.Resources.Main_Background;
+            this.BodyPanel.Controls.Add(this.InsurancePaymentField);
+            this.BodyPanel.Controls.Add(this.DeadlineField);
+            this.BodyPanel.Controls.Add(this.RepairCostField);
+            this.BodyPanel.Controls.Add(this.ReceiptDateField);
             this.BodyPanel.Controls.Add(this.CancelButton);
             this.BodyPanel.Controls.Add(this.AddButton);
             this.BodyPanel.Controls.Add(this.ClientCodeComboBox);
             this.BodyPanel.Controls.Add(this.VehicleCodeComboBox);
             this.BodyPanel.Controls.Add(this.OrderCodeComboBox);
-            this.BodyPanel.Controls.Add(this.InsurancePaymentLabel);
-            this.BodyPanel.Controls.Add(this.InsurancePaymentField);
             this.BodyPanel.Controls.Add(this.PersonalLabel);
             this.BodyPanel.Controls.Add(this.OrdersPicture);
             this.BodyPanel.Controls.Add(this.LeftPanel);
-            this.BodyPanel.Controls.Add(this.DeadlineLabel);
             this.BodyPanel.Controls.Add(this.ClientCodeLabel);
-            this.BodyPanel.Controls.Add(this.RepairCostLabel);
-            this.BodyPanel.Controls.Add(this.ReceiptDateLabel);
-            this.BodyPanel.Controls.Add(this.DeadlineField);
-            this.BodyPanel.Controls.Add(this.RepairCostField);
             this.BodyPanel.Controls.Add(this.VehicleCodeLabel);
             this.BodyPanel.Controls.Add(this.OrderCodeLabel);
-            this.BodyPanel.Controls.Add(this.ReceiptDateField);
             this.BodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BodyPanel.Location = new System.Drawing.Point(0, 0);
             this.BodyPanel.Name = "BodyPanel";
@@ -143,27 +135,6 @@
             this.OrderCodeComboBox.Size = new System.Drawing.Size(187, 21);
             this.OrderCodeComboBox.TabIndex = 26;
             // 
-            // InsurancePaymentLabel
-            // 
-            this.InsurancePaymentLabel.AutoSize = true;
-            this.InsurancePaymentLabel.BackColor = System.Drawing.Color.Transparent;
-            this.InsurancePaymentLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.InsurancePaymentLabel.ForeColor = System.Drawing.Color.Violet;
-            this.InsurancePaymentLabel.Location = new System.Drawing.Point(103, 365);
-            this.InsurancePaymentLabel.Name = "InsurancePaymentLabel";
-            this.InsurancePaymentLabel.Size = new System.Drawing.Size(140, 16);
-            this.InsurancePaymentLabel.TabIndex = 25;
-            this.InsurancePaymentLabel.Text = "Страховая выплата";
-            // 
-            // InsurancePaymentField
-            // 
-            this.InsurancePaymentField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.InsurancePaymentField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.InsurancePaymentField.Location = new System.Drawing.Point(261, 364);
-            this.InsurancePaymentField.Name = "InsurancePaymentField";
-            this.InsurancePaymentField.Size = new System.Drawing.Size(187, 21);
-            this.InsurancePaymentField.TabIndex = 24;
-            // 
             // PersonalLabel
             // 
             this.PersonalLabel.AutoSize = true;
@@ -201,18 +172,6 @@
             this.LeftPanel.Size = new System.Drawing.Size(95, 461);
             this.LeftPanel.TabIndex = 20;
             // 
-            // DeadlineLabel
-            // 
-            this.DeadlineLabel.AutoSize = true;
-            this.DeadlineLabel.BackColor = System.Drawing.Color.Transparent;
-            this.DeadlineLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DeadlineLabel.ForeColor = System.Drawing.Color.Violet;
-            this.DeadlineLabel.Location = new System.Drawing.Point(117, 312);
-            this.DeadlineLabel.Name = "DeadlineLabel";
-            this.DeadlineLabel.Size = new System.Drawing.Size(126, 16);
-            this.DeadlineLabel.TabIndex = 19;
-            this.DeadlineLabel.Text = "Срок выполнения";
-            // 
             // ClientCodeLabel
             // 
             this.ClientCodeLabel.AutoSize = true;
@@ -221,51 +180,9 @@
             this.ClientCodeLabel.ForeColor = System.Drawing.Color.MediumPurple;
             this.ClientCodeLabel.Location = new System.Drawing.Point(152, 168);
             this.ClientCodeLabel.Name = "ClientCodeLabel";
-            this.ClientCodeLabel.Size = new System.Drawing.Size(91, 16);
+            this.ClientCodeLabel.Size = new System.Drawing.Size(92, 16);
             this.ClientCodeLabel.TabIndex = 18;
             this.ClientCodeLabel.Text = "Код клиента";
-            // 
-            // RepairCostLabel
-            // 
-            this.RepairCostLabel.AutoSize = true;
-            this.RepairCostLabel.BackColor = System.Drawing.Color.Transparent;
-            this.RepairCostLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.RepairCostLabel.ForeColor = System.Drawing.Color.Violet;
-            this.RepairCostLabel.Location = new System.Drawing.Point(106, 260);
-            this.RepairCostLabel.Name = "RepairCostLabel";
-            this.RepairCostLabel.Size = new System.Drawing.Size(137, 16);
-            this.RepairCostLabel.TabIndex = 16;
-            this.RepairCostLabel.Text = "Стоимость ремонта";
-            // 
-            // ReceiptDateLabel
-            // 
-            this.ReceiptDateLabel.AutoSize = true;
-            this.ReceiptDateLabel.BackColor = System.Drawing.Color.Transparent;
-            this.ReceiptDateLabel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ReceiptDateLabel.ForeColor = System.Drawing.Color.Violet;
-            this.ReceiptDateLabel.Location = new System.Drawing.Point(113, 210);
-            this.ReceiptDateLabel.Name = "ReceiptDateLabel";
-            this.ReceiptDateLabel.Size = new System.Drawing.Size(130, 16);
-            this.ReceiptDateLabel.TabIndex = 15;
-            this.ReceiptDateLabel.Text = "Дата поступления";
-            // 
-            // DeadlineField
-            // 
-            this.DeadlineField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.DeadlineField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.DeadlineField.Location = new System.Drawing.Point(261, 311);
-            this.DeadlineField.Name = "DeadlineField";
-            this.DeadlineField.Size = new System.Drawing.Size(187, 21);
-            this.DeadlineField.TabIndex = 14;
-            // 
-            // RepairCostField
-            // 
-            this.RepairCostField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.RepairCostField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.RepairCostField.Location = new System.Drawing.Point(261, 259);
-            this.RepairCostField.Name = "RepairCostField";
-            this.RepairCostField.Size = new System.Drawing.Size(187, 21);
-            this.RepairCostField.TabIndex = 13;
             // 
             // VehicleCodeLabel
             // 
@@ -275,7 +192,7 @@
             this.VehicleCodeLabel.ForeColor = System.Drawing.Color.MediumPurple;
             this.VehicleCodeLabel.Location = new System.Drawing.Point(126, 109);
             this.VehicleCodeLabel.Name = "VehicleCodeLabel";
-            this.VehicleCodeLabel.Size = new System.Drawing.Size(117, 16);
+            this.VehicleCodeLabel.Size = new System.Drawing.Size(118, 16);
             this.VehicleCodeLabel.TabIndex = 10;
             this.VehicleCodeLabel.Text = "Код автомобиля";
             // 
@@ -287,18 +204,85 @@
             this.OrderCodeLabel.ForeColor = System.Drawing.Color.MediumPurple;
             this.OrderCodeLabel.Location = new System.Drawing.Point(161, 60);
             this.OrderCodeLabel.Name = "OrderCodeLabel";
-            this.OrderCodeLabel.Size = new System.Drawing.Size(82, 16);
+            this.OrderCodeLabel.Size = new System.Drawing.Size(83, 16);
             this.OrderCodeLabel.TabIndex = 8;
             this.OrderCodeLabel.Text = "Код заказа";
             // 
             // ReceiptDateField
             // 
-            this.ReceiptDateField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ReceiptDateField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ReceiptDateField.Location = new System.Drawing.Point(261, 209);
+            this.ReceiptDateField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ReceiptDateField.DefaultText = "";
+            this.ReceiptDateField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ReceiptDateField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ReceiptDateField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ReceiptDateField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ReceiptDateField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ReceiptDateField.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ReceiptDateField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ReceiptDateField.Location = new System.Drawing.Point(261, 210);
             this.ReceiptDateField.Name = "ReceiptDateField";
+            this.ReceiptDateField.PasswordChar = '\0';
+            this.ReceiptDateField.PlaceholderText = "Дата поступления";
+            this.ReceiptDateField.SelectedText = "";
             this.ReceiptDateField.Size = new System.Drawing.Size(187, 21);
-            this.ReceiptDateField.TabIndex = 7;
+            this.ReceiptDateField.TabIndex = 31;
+            // 
+            // RepairCostField
+            // 
+            this.RepairCostField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.RepairCostField.DefaultText = "";
+            this.RepairCostField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.RepairCostField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.RepairCostField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.RepairCostField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.RepairCostField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RepairCostField.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.RepairCostField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RepairCostField.Location = new System.Drawing.Point(261, 255);
+            this.RepairCostField.Name = "RepairCostField";
+            this.RepairCostField.PasswordChar = '\0';
+            this.RepairCostField.PlaceholderText = "Стоимость ремонта";
+            this.RepairCostField.SelectedText = "";
+            this.RepairCostField.Size = new System.Drawing.Size(187, 21);
+            this.RepairCostField.TabIndex = 32;
+            // 
+            // DeadlineField
+            // 
+            this.DeadlineField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DeadlineField.DefaultText = "";
+            this.DeadlineField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.DeadlineField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.DeadlineField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DeadlineField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DeadlineField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DeadlineField.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DeadlineField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DeadlineField.Location = new System.Drawing.Point(261, 312);
+            this.DeadlineField.Name = "DeadlineField";
+            this.DeadlineField.PasswordChar = '\0';
+            this.DeadlineField.PlaceholderText = "Срок выполнения ";
+            this.DeadlineField.SelectedText = "";
+            this.DeadlineField.Size = new System.Drawing.Size(187, 21);
+            this.DeadlineField.TabIndex = 33;
+            // 
+            // InsurancePaymentField
+            // 
+            this.InsurancePaymentField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.InsurancePaymentField.DefaultText = "";
+            this.InsurancePaymentField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.InsurancePaymentField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.InsurancePaymentField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.InsurancePaymentField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.InsurancePaymentField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.InsurancePaymentField.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.InsurancePaymentField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.InsurancePaymentField.Location = new System.Drawing.Point(258, 365);
+            this.InsurancePaymentField.Name = "InsurancePaymentField";
+            this.InsurancePaymentField.PasswordChar = '\0';
+            this.InsurancePaymentField.PlaceholderText = "Страховая выплата";
+            this.InsurancePaymentField.SelectedText = "";
+            this.InsurancePaymentField.Size = new System.Drawing.Size(190, 21);
+            this.InsurancePaymentField.TabIndex = 34;
             // 
             // Orders
             // 
@@ -320,24 +304,20 @@
         #endregion
 
         private System.Windows.Forms.Panel BodyPanel;
-        private System.Windows.Forms.Label InsurancePaymentLabel;
-        private System.Windows.Forms.TextBox InsurancePaymentField;
         private System.Windows.Forms.Label PersonalLabel;
         private System.Windows.Forms.PictureBox OrdersPicture;
         private System.Windows.Forms.Panel LeftPanel;
-        private System.Windows.Forms.Label DeadlineLabel;
         private System.Windows.Forms.Label ClientCodeLabel;
-        private System.Windows.Forms.Label RepairCostLabel;
-        private System.Windows.Forms.Label ReceiptDateLabel;
-        private System.Windows.Forms.TextBox DeadlineField;
-        private System.Windows.Forms.TextBox RepairCostField;
         private System.Windows.Forms.Label VehicleCodeLabel;
         private System.Windows.Forms.Label OrderCodeLabel;
-        private System.Windows.Forms.TextBox ReceiptDateField;
         private System.Windows.Forms.ComboBox ClientCodeComboBox;
         private System.Windows.Forms.ComboBox VehicleCodeComboBox;
         private System.Windows.Forms.ComboBox OrderCodeComboBox;
         private Guna.UI2.WinForms.Guna2Button AddButton;
         private Guna.UI2.WinForms.Guna2Button CancelButton;
+        private Guna.UI2.WinForms.Guna2TextBox InsurancePaymentField;
+        private Guna.UI2.WinForms.Guna2TextBox DeadlineField;
+        private Guna.UI2.WinForms.Guna2TextBox RepairCostField;
+        private Guna.UI2.WinForms.Guna2TextBox ReceiptDateField;
     }
 }
