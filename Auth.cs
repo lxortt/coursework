@@ -46,36 +46,6 @@ namespace coursework
         readonly MySqlConnection conn;
         readonly string connStr = "server=chuc.caseum.ru; port=33333; username=st_4_20_10; password=88536946; database=is_4_20_st10_KURS;";
 
-        private void AuthButton_Click(object sender, EventArgs e)
-        {
-            conn.Open();
-            string sql = "SELECT * FROM Users WHERE Login = @un and Password = @up";
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand(sql, conn);
-            command.Parameters.AddWithValue("@un", LoginField.Text);
-            command.Parameters.AddWithValue("@up", sha256(PasswordField.Text));
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-            conn.Close();
-            if (table.Rows.Count > 0)
-            {
-                Auth1.auth = true;
-                GetUserInfo(LoginField.Text);
-                conn.Open();
-                string sql1 = $"SELECT ID FROM Users WHERE Login='{LoginField.Text}'";
-                MySqlCommand command1 = new MySqlCommand(sql1, conn);
-                string ID = command1.ExecuteScalar().ToString();
-                conn.Close();
-                this.Close();
-                new Thread(() => Application.Run(new Menu())).Start();
-            }
-            else
-            {
-                MessageBox.Show("Ошибка авторизации.\r\nВход в программу не был произведён. Возможно, вы ввели неверное имя пользователя или пароль.");
-                PasswordField.Clear();
-            }
-        }
          private static string sha256(string randomString)
             {
                 //Тут происходит криптографическая магия. Смысл данного метода заключается в том, что строка залетает в метод
@@ -128,6 +98,37 @@ namespace coursework
             if (LoginField.Text == "")
             {
                 LoginField.Text = "Логин";
+            }
+        }
+
+        private void AuthButton_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            string sql = "SELECT * FROM Users WHERE Login = @un and Password = @up";
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand command = new MySqlCommand(sql, conn);
+            command.Parameters.AddWithValue("@un", LoginField.Text);
+            command.Parameters.AddWithValue("@up", sha256(PasswordField.Text));
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            conn.Close();
+            if (table.Rows.Count > 0)
+            {
+                Auth1.auth = true;
+                GetUserInfo(LoginField.Text);
+                conn.Open();
+                string sql1 = $"SELECT ID FROM Users WHERE Login='{LoginField.Text}'";
+                MySqlCommand command1 = new MySqlCommand(sql1, conn);
+                string ID = command1.ExecuteScalar().ToString();
+                conn.Close();
+                this.Close();
+                new Thread(() => Application.Run(new Menu())).Start();
+            }
+            else
+            {
+                MessageBox.Show("Ошибка авторизации.\r\nВход в программу не был произведён. Возможно, вы ввели неверное имя пользователя или пароль.");
+                PasswordField.Clear();
             }
         }
     }

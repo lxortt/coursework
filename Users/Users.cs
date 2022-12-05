@@ -24,6 +24,7 @@ namespace Course_work.Users
             conn = new MySqlConnection(connStr);
         }
         MySqlConnection conn;
+
         private void AddButton_Click(object sender, EventArgs e)
         {
             string Login = LoginField.Text;

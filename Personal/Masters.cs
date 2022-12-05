@@ -24,6 +24,7 @@ namespace Course_work.Personal
             conn = new MySqlConnection(connStr);
         }
         MySqlConnection conn;
+
         private void AddButton_Click(object sender, EventArgs e)
         {
             string FIO = FIOField.Text;

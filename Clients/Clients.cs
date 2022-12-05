@@ -19,7 +19,6 @@ namespace Course_work
             InitializeComponent();
         }
 
-
         private void Form1_Load(object sender, EventArgs e)
         {
             string connStr = "server=chuc.caseum.ru; port=33333; username=st_4_20_10; password=88536946; database=is_4_20_st10_KURS;";

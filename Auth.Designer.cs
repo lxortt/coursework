@@ -30,56 +30,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Auth));
-            this.AuthLabel = new System.Windows.Forms.Label();
-            this.HeaderPanel = new System.Windows.Forms.Panel();
             this.BodyPanel = new System.Windows.Forms.Panel();
+            this.AuthButton = new Guna.UI2.WinForms.Guna2Button();
             this.FooterPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CreateLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.AuthButton = new System.Windows.Forms.Button();
             this.AuthPicture = new System.Windows.Forms.PictureBox();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.LoginLabel = new System.Windows.Forms.Label();
             this.PasswordField = new System.Windows.Forms.TextBox();
             this.LoginField = new System.Windows.Forms.TextBox();
-            this.HeaderPanel.SuspendLayout();
+            this.HeaderPanel = new System.Windows.Forms.Panel();
+            this.AuthLabel = new System.Windows.Forms.Label();
             this.BodyPanel.SuspendLayout();
             this.FooterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AuthPicture)).BeginInit();
+            this.HeaderPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // AuthLabel
-            // 
-            this.AuthLabel.AutoSize = true;
-            this.AuthLabel.BackColor = System.Drawing.Color.Transparent;
-            this.AuthLabel.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AuthLabel.ForeColor = System.Drawing.Color.White;
-            this.AuthLabel.Location = new System.Drawing.Point(91, 25);
-            this.AuthLabel.Name = "AuthLabel";
-            this.AuthLabel.Size = new System.Drawing.Size(155, 25);
-            this.AuthLabel.TabIndex = 2;
-            this.AuthLabel.Text = "Авторизация";
-            this.AuthLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // HeaderPanel
-            // 
-            this.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(26)))), ((int)(((byte)(33)))));
-            this.HeaderPanel.BackgroundImage = global::Course_work.Properties.Resources.Panel_Background;
-            this.HeaderPanel.Controls.Add(this.AuthLabel);
-            this.HeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.HeaderPanel.Location = new System.Drawing.Point(0, 0);
-            this.HeaderPanel.Name = "HeaderPanel";
-            this.HeaderPanel.Size = new System.Drawing.Size(334, 70);
-            this.HeaderPanel.TabIndex = 3;
             // 
             // BodyPanel
             // 
             this.BodyPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.BodyPanel.BackgroundImage = global::Course_work.Properties.Resources.Additional_Background;
+            this.BodyPanel.Controls.Add(this.AuthButton);
             this.BodyPanel.Controls.Add(this.FooterPanel);
             this.BodyPanel.Controls.Add(this.CreateLinkLabel);
-            this.BodyPanel.Controls.Add(this.AuthButton);
             this.BodyPanel.Controls.Add(this.AuthPicture);
             this.BodyPanel.Controls.Add(this.PasswordLabel);
             this.BodyPanel.Controls.Add(this.LoginLabel);
@@ -91,6 +67,25 @@
             this.BodyPanel.Name = "BodyPanel";
             this.BodyPanel.Size = new System.Drawing.Size(334, 416);
             this.BodyPanel.TabIndex = 0;
+            // 
+            // AuthButton
+            // 
+            this.AuthButton.BackColor = System.Drawing.Color.Transparent;
+            this.AuthButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AuthButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AuthButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AuthButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AuthButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AuthButton.FillColor = System.Drawing.Color.Transparent;
+            this.AuthButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AuthButton.ForeColor = System.Drawing.Color.White;
+            this.AuthButton.ImageSize = new System.Drawing.Size(0, 0);
+            this.AuthButton.Location = new System.Drawing.Point(117, 199);
+            this.AuthButton.Name = "AuthButton";
+            this.AuthButton.Size = new System.Drawing.Size(100, 21);
+            this.AuthButton.TabIndex = 35;
+            this.AuthButton.Text = "Войти";
+            this.AuthButton.Click += new System.EventHandler(this.AuthButton_Click);
             // 
             // FooterPanel
             // 
@@ -130,25 +125,6 @@
             this.CreateLinkLabel.Text = "Нет учётной записи? Зарегистрируйся!";
             this.CreateLinkLabel.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
             this.CreateLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.CreateLinkLabel_LinkClicked);
-            // 
-            // AuthButton
-            // 
-            this.AuthButton.BackColor = System.Drawing.Color.Transparent;
-            this.AuthButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.AuthButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AuthButton.FlatAppearance.BorderSize = 0;
-            this.AuthButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.AuthButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.AuthButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AuthButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AuthButton.ForeColor = System.Drawing.Color.White;
-            this.AuthButton.Location = new System.Drawing.Point(117, 200);
-            this.AuthButton.Name = "AuthButton";
-            this.AuthButton.Size = new System.Drawing.Size(100, 23);
-            this.AuthButton.TabIndex = 5;
-            this.AuthButton.Text = "Войти";
-            this.AuthButton.UseVisualStyleBackColor = false;
-            this.AuthButton.Click += new System.EventHandler(this.AuthButton_Click);
             // 
             // AuthPicture
             // 
@@ -209,6 +185,30 @@
             this.LoginField.Enter += new System.EventHandler(this.LoginField_Enter);
             this.LoginField.Leave += new System.EventHandler(this.LoginField_Leave);
             // 
+            // HeaderPanel
+            // 
+            this.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(26)))), ((int)(((byte)(33)))));
+            this.HeaderPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HeaderPanel.BackgroundImage")));
+            this.HeaderPanel.Controls.Add(this.AuthLabel);
+            this.HeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.HeaderPanel.Location = new System.Drawing.Point(0, 0);
+            this.HeaderPanel.Name = "HeaderPanel";
+            this.HeaderPanel.Size = new System.Drawing.Size(334, 70);
+            this.HeaderPanel.TabIndex = 3;
+            // 
+            // AuthLabel
+            // 
+            this.AuthLabel.AutoSize = true;
+            this.AuthLabel.BackColor = System.Drawing.Color.Transparent;
+            this.AuthLabel.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AuthLabel.ForeColor = System.Drawing.Color.White;
+            this.AuthLabel.Location = new System.Drawing.Point(91, 25);
+            this.AuthLabel.Name = "AuthLabel";
+            this.AuthLabel.Size = new System.Drawing.Size(155, 25);
+            this.AuthLabel.TabIndex = 2;
+            this.AuthLabel.Text = "Авторизация";
+            this.AuthLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Auth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,13 +219,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Auth";
             this.Text = "Auth";
-            this.HeaderPanel.ResumeLayout(false);
-            this.HeaderPanel.PerformLayout();
             this.BodyPanel.ResumeLayout(false);
             this.BodyPanel.PerformLayout();
             this.FooterPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AuthPicture)).EndInit();
+            this.HeaderPanel.ResumeLayout(false);
+            this.HeaderPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -236,12 +236,12 @@
         private System.Windows.Forms.TextBox LoginField;
         private System.Windows.Forms.Label PasswordLabel;
         private System.Windows.Forms.Label LoginLabel;
-        private System.Windows.Forms.Button AuthButton;
         private System.Windows.Forms.PictureBox AuthPicture;
         private System.Windows.Forms.LinkLabel CreateLinkLabel;
         private System.Windows.Forms.Panel FooterPanel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label AuthLabel;
         private System.Windows.Forms.Panel HeaderPanel;
+        private Guna.UI2.WinForms.Guna2Button AuthButton;
     }
 }

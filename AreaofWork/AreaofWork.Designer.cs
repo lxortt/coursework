@@ -31,33 +31,33 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AreaOfWork));
             this.BodyPanel = new System.Windows.Forms.Panel();
             this.AreaOfWorkLabel = new System.Windows.Forms.Label();
-            this.CancelButton = new System.Windows.Forms.Button();
             this.WorkPicture = new System.Windows.Forms.PictureBox();
             this.LeftPanel = new System.Windows.Forms.Panel();
             this.ApprovalDateLabel = new System.Windows.Forms.Label();
             this.DeadlineLabel = new System.Windows.Forms.Label();
             this.ApprovalDateField = new System.Windows.Forms.TextBox();
-            this.AddButton = new System.Windows.Forms.Button();
             this.CostOfWorkLabel = new System.Windows.Forms.Label();
             this.TypeOfWorkLabel = new System.Windows.Forms.Label();
             this.DeadlineField = new System.Windows.Forms.TextBox();
             this.CostOfWorkField = new System.Windows.Forms.TextBox();
             this.TypeOfWorkField = new System.Windows.Forms.TextBox();
+            this.AddButton = new Guna.UI2.WinForms.Guna2Button();
+            this.CancelButton = new Guna.UI2.WinForms.Guna2Button();
             this.BodyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WorkPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // BodyPanel
             // 
-            this.BodyPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BodyPanel.BackgroundImage")));
-            this.BodyPanel.Controls.Add(this.AreaOfWorkLabel);
+            this.BodyPanel.BackgroundImage = global::Course_work.Properties.Resources.Main_Background;
             this.BodyPanel.Controls.Add(this.CancelButton);
+            this.BodyPanel.Controls.Add(this.AddButton);
+            this.BodyPanel.Controls.Add(this.AreaOfWorkLabel);
             this.BodyPanel.Controls.Add(this.WorkPicture);
             this.BodyPanel.Controls.Add(this.LeftPanel);
             this.BodyPanel.Controls.Add(this.ApprovalDateLabel);
             this.BodyPanel.Controls.Add(this.DeadlineLabel);
             this.BodyPanel.Controls.Add(this.ApprovalDateField);
-            this.BodyPanel.Controls.Add(this.AddButton);
             this.BodyPanel.Controls.Add(this.CostOfWorkLabel);
             this.BodyPanel.Controls.Add(this.TypeOfWorkLabel);
             this.BodyPanel.Controls.Add(this.DeadlineField);
@@ -66,7 +66,7 @@
             this.BodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BodyPanel.Location = new System.Drawing.Point(0, 0);
             this.BodyPanel.Name = "BodyPanel";
-            this.BodyPanel.Size = new System.Drawing.Size(800, 450);
+            this.BodyPanel.Size = new System.Drawing.Size(834, 461);
             this.BodyPanel.TabIndex = 4;
             // 
             // AreaOfWorkLabel
@@ -81,25 +81,6 @@
             this.AreaOfWorkLabel.TabIndex = 23;
             this.AreaOfWorkLabel.Text = "Для внесения данных в таблицу заполните следующие поля:";
             this.AreaOfWorkLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // CancelButton
-            // 
-            this.CancelButton.BackColor = System.Drawing.Color.Transparent;
-            this.CancelButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CancelButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CancelButton.FlatAppearance.BorderSize = 0;
-            this.CancelButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.CancelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CancelButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CancelButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.CancelButton.Location = new System.Drawing.Point(260, 310);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(187, 23);
-            this.CancelButton.TabIndex = 22;
-            this.CancelButton.Text = "Отмена";
-            this.CancelButton.UseVisualStyleBackColor = false;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // WorkPicture
             // 
@@ -118,10 +99,11 @@
             // LeftPanel
             // 
             this.LeftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(26)))), ((int)(((byte)(33)))));
+            this.LeftPanel.BackgroundImage = global::Course_work.Properties.Resources.Panel_Background;
             this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.LeftPanel.Location = new System.Drawing.Point(0, 0);
             this.LeftPanel.Name = "LeftPanel";
-            this.LeftPanel.Size = new System.Drawing.Size(95, 450);
+            this.LeftPanel.Size = new System.Drawing.Size(95, 461);
             this.LeftPanel.TabIndex = 20;
             // 
             // ApprovalDateLabel
@@ -156,24 +138,6 @@
             this.ApprovalDateField.Name = "ApprovalDateField";
             this.ApprovalDateField.Size = new System.Drawing.Size(187, 21);
             this.ApprovalDateField.TabIndex = 13;
-            // 
-            // AddButton
-            // 
-            this.AddButton.BackColor = System.Drawing.Color.Transparent;
-            this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddButton.FlatAppearance.BorderSize = 0;
-            this.AddButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.AddButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.AddButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.AddButton.Location = new System.Drawing.Point(260, 261);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(187, 23);
-            this.AddButton.TabIndex = 12;
-            this.AddButton.Text = "Добавить";
-            this.AddButton.UseVisualStyleBackColor = false;
-            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // CostOfWorkLabel
             // 
@@ -226,14 +190,52 @@
             this.TypeOfWorkField.Size = new System.Drawing.Size(187, 21);
             this.TypeOfWorkField.TabIndex = 4;
             // 
-            // AreaofWork
+            // AddButton
+            // 
+            this.AddButton.BackColor = System.Drawing.Color.Transparent;
+            this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AddButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AddButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AddButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AddButton.FillColor = System.Drawing.Color.Transparent;
+            this.AddButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AddButton.ForeColor = System.Drawing.Color.White;
+            this.AddButton.ImageSize = new System.Drawing.Size(0, 0);
+            this.AddButton.Location = new System.Drawing.Point(327, 348);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(120, 50);
+            this.AddButton.TabIndex = 27;
+            this.AddButton.Text = "Добавить";
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.BackColor = System.Drawing.Color.Transparent;
+            this.CancelButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CancelButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.CancelButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.CancelButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.CancelButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.CancelButton.FillColor = System.Drawing.Color.Transparent;
+            this.CancelButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.CancelButton.ForeColor = System.Drawing.Color.White;
+            this.CancelButton.ImageSize = new System.Drawing.Size(0, 0);
+            this.CancelButton.Location = new System.Drawing.Point(514, 348);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(120, 50);
+            this.CancelButton.TabIndex = 28;
+            this.CancelButton.Text = "Отмена";
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // AreaOfWork
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(834, 461);
             this.Controls.Add(this.BodyPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "AreaofWork";
+            this.Name = "AreaOfWork";
             this.Text = "AreaOfWork";
             this.Load += new System.EventHandler(this.AreaofWork_Load);
             this.BodyPanel.ResumeLayout(false);
@@ -246,18 +248,18 @@
         #endregion
 
         private System.Windows.Forms.Panel BodyPanel;
-        private new System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.PictureBox WorkPicture;
         private System.Windows.Forms.Panel LeftPanel;
         private System.Windows.Forms.Label ApprovalDateLabel;
         private System.Windows.Forms.Label DeadlineLabel;
         private System.Windows.Forms.TextBox ApprovalDateField;
-        private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Label CostOfWorkLabel;
         private System.Windows.Forms.Label TypeOfWorkLabel;
         private System.Windows.Forms.TextBox DeadlineField;
         private System.Windows.Forms.TextBox CostOfWorkField;
         private System.Windows.Forms.TextBox TypeOfWorkField;
         private System.Windows.Forms.Label AreaOfWorkLabel;
+        private Guna.UI2.WinForms.Guna2Button AddButton;
+        private Guna.UI2.WinForms.Guna2Button CancelButton;
     }
 }

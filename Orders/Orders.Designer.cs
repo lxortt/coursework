@@ -30,10 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Orders));
             this.BodyPanel = new System.Windows.Forms.Panel();
+            this.CancelButton = new Guna.UI2.WinForms.Guna2Button();
+            this.AddButton = new Guna.UI2.WinForms.Guna2Button();
+            this.ClientCodeComboBox = new System.Windows.Forms.ComboBox();
+            this.VehicleCodeComboBox = new System.Windows.Forms.ComboBox();
+            this.OrderCodeComboBox = new System.Windows.Forms.ComboBox();
             this.InsurancePaymentLabel = new System.Windows.Forms.Label();
             this.InsurancePaymentField = new System.Windows.Forms.TextBox();
             this.PersonalLabel = new System.Windows.Forms.Label();
-            this.CancelButton = new System.Windows.Forms.Button();
             this.OrdersPicture = new System.Windows.Forms.PictureBox();
             this.LeftPanel = new System.Windows.Forms.Panel();
             this.DeadlineLabel = new System.Windows.Forms.Label();
@@ -42,27 +46,24 @@
             this.ReceiptDateLabel = new System.Windows.Forms.Label();
             this.DeadlineField = new System.Windows.Forms.TextBox();
             this.RepairCostField = new System.Windows.Forms.TextBox();
-            this.AddButton = new System.Windows.Forms.Button();
             this.VehicleCodeLabel = new System.Windows.Forms.Label();
             this.OrderCodeLabel = new System.Windows.Forms.Label();
             this.ReceiptDateField = new System.Windows.Forms.TextBox();
-            this.OrderCodeComboBox = new System.Windows.Forms.ComboBox();
-            this.VehicleCodeComboBox = new System.Windows.Forms.ComboBox();
-            this.ClientCodeComboBox = new System.Windows.Forms.ComboBox();
             this.BodyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrdersPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // BodyPanel
             // 
-            this.BodyPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BodyPanel.BackgroundImage")));
+            this.BodyPanel.BackgroundImage = global::Course_work.Properties.Resources.Main_Background;
+            this.BodyPanel.Controls.Add(this.CancelButton);
+            this.BodyPanel.Controls.Add(this.AddButton);
             this.BodyPanel.Controls.Add(this.ClientCodeComboBox);
             this.BodyPanel.Controls.Add(this.VehicleCodeComboBox);
             this.BodyPanel.Controls.Add(this.OrderCodeComboBox);
             this.BodyPanel.Controls.Add(this.InsurancePaymentLabel);
             this.BodyPanel.Controls.Add(this.InsurancePaymentField);
             this.BodyPanel.Controls.Add(this.PersonalLabel);
-            this.BodyPanel.Controls.Add(this.CancelButton);
             this.BodyPanel.Controls.Add(this.OrdersPicture);
             this.BodyPanel.Controls.Add(this.LeftPanel);
             this.BodyPanel.Controls.Add(this.DeadlineLabel);
@@ -71,15 +72,76 @@
             this.BodyPanel.Controls.Add(this.ReceiptDateLabel);
             this.BodyPanel.Controls.Add(this.DeadlineField);
             this.BodyPanel.Controls.Add(this.RepairCostField);
-            this.BodyPanel.Controls.Add(this.AddButton);
             this.BodyPanel.Controls.Add(this.VehicleCodeLabel);
             this.BodyPanel.Controls.Add(this.OrderCodeLabel);
             this.BodyPanel.Controls.Add(this.ReceiptDateField);
             this.BodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BodyPanel.Location = new System.Drawing.Point(0, 0);
             this.BodyPanel.Name = "BodyPanel";
-            this.BodyPanel.Size = new System.Drawing.Size(800, 450);
+            this.BodyPanel.Size = new System.Drawing.Size(834, 461);
             this.BodyPanel.TabIndex = 7;
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.BackColor = System.Drawing.Color.Transparent;
+            this.CancelButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CancelButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.CancelButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.CancelButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.CancelButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.CancelButton.FillColor = System.Drawing.Color.Transparent;
+            this.CancelButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.CancelButton.ForeColor = System.Drawing.Color.White;
+            this.CancelButton.ImageSize = new System.Drawing.Size(0, 0);
+            this.CancelButton.Location = new System.Drawing.Point(514, 399);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(120, 50);
+            this.CancelButton.TabIndex = 30;
+            this.CancelButton.Text = "Отмена";
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // AddButton
+            // 
+            this.AddButton.BackColor = System.Drawing.Color.Transparent;
+            this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AddButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AddButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AddButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AddButton.FillColor = System.Drawing.Color.Transparent;
+            this.AddButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AddButton.ForeColor = System.Drawing.Color.White;
+            this.AddButton.ImageSize = new System.Drawing.Size(0, 0);
+            this.AddButton.Location = new System.Drawing.Point(328, 399);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(120, 50);
+            this.AddButton.TabIndex = 29;
+            this.AddButton.Text = "Добавить";
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            // 
+            // ClientCodeComboBox
+            // 
+            this.ClientCodeComboBox.FormattingEnabled = true;
+            this.ClientCodeComboBox.Location = new System.Drawing.Point(261, 163);
+            this.ClientCodeComboBox.Name = "ClientCodeComboBox";
+            this.ClientCodeComboBox.Size = new System.Drawing.Size(187, 21);
+            this.ClientCodeComboBox.TabIndex = 28;
+            // 
+            // VehicleCodeComboBox
+            // 
+            this.VehicleCodeComboBox.FormattingEnabled = true;
+            this.VehicleCodeComboBox.Location = new System.Drawing.Point(261, 108);
+            this.VehicleCodeComboBox.Name = "VehicleCodeComboBox";
+            this.VehicleCodeComboBox.Size = new System.Drawing.Size(187, 21);
+            this.VehicleCodeComboBox.TabIndex = 27;
+            // 
+            // OrderCodeComboBox
+            // 
+            this.OrderCodeComboBox.FormattingEnabled = true;
+            this.OrderCodeComboBox.Location = new System.Drawing.Point(261, 59);
+            this.OrderCodeComboBox.Name = "OrderCodeComboBox";
+            this.OrderCodeComboBox.Size = new System.Drawing.Size(187, 21);
+            this.OrderCodeComboBox.TabIndex = 26;
             // 
             // InsurancePaymentLabel
             // 
@@ -115,25 +177,6 @@
             this.PersonalLabel.Text = "Для внесения данных в таблицу заполните следующие поля:";
             this.PersonalLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // CancelButton
-            // 
-            this.CancelButton.BackColor = System.Drawing.Color.Transparent;
-            this.CancelButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CancelButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CancelButton.FlatAppearance.BorderSize = 0;
-            this.CancelButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.CancelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CancelButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CancelButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.CancelButton.Location = new System.Drawing.Point(574, 400);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(187, 23);
-            this.CancelButton.TabIndex = 22;
-            this.CancelButton.Text = "Отмена";
-            this.CancelButton.UseVisualStyleBackColor = false;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
-            // 
             // OrdersPicture
             // 
             this.OrdersPicture.BackColor = System.Drawing.Color.Transparent;
@@ -151,10 +194,11 @@
             // LeftPanel
             // 
             this.LeftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(26)))), ((int)(((byte)(33)))));
+            this.LeftPanel.BackgroundImage = global::Course_work.Properties.Resources.Panel_Background;
             this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.LeftPanel.Location = new System.Drawing.Point(0, 0);
             this.LeftPanel.Name = "LeftPanel";
-            this.LeftPanel.Size = new System.Drawing.Size(95, 450);
+            this.LeftPanel.Size = new System.Drawing.Size(95, 461);
             this.LeftPanel.TabIndex = 20;
             // 
             // DeadlineLabel
@@ -223,24 +267,6 @@
             this.RepairCostField.Size = new System.Drawing.Size(187, 21);
             this.RepairCostField.TabIndex = 13;
             // 
-            // AddButton
-            // 
-            this.AddButton.BackColor = System.Drawing.Color.Transparent;
-            this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddButton.FlatAppearance.BorderSize = 0;
-            this.AddButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(80)))));
-            this.AddButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.AddButton.ForeColor = System.Drawing.Color.OrangeRed;
-            this.AddButton.Location = new System.Drawing.Point(261, 400);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(187, 23);
-            this.AddButton.TabIndex = 12;
-            this.AddButton.Text = "Добавить";
-            this.AddButton.UseVisualStyleBackColor = false;
-            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
-            // 
             // VehicleCodeLabel
             // 
             this.VehicleCodeLabel.AutoSize = true;
@@ -274,36 +300,13 @@
             this.ReceiptDateField.Size = new System.Drawing.Size(187, 21);
             this.ReceiptDateField.TabIndex = 7;
             // 
-            // OrderCodeComboBox
-            // 
-            this.OrderCodeComboBox.FormattingEnabled = true;
-            this.OrderCodeComboBox.Location = new System.Drawing.Point(261, 59);
-            this.OrderCodeComboBox.Name = "OrderCodeComboBox";
-            this.OrderCodeComboBox.Size = new System.Drawing.Size(187, 21);
-            this.OrderCodeComboBox.TabIndex = 26;
-            // 
-            // VehicleCodeComboBox
-            // 
-            this.VehicleCodeComboBox.FormattingEnabled = true;
-            this.VehicleCodeComboBox.Location = new System.Drawing.Point(261, 108);
-            this.VehicleCodeComboBox.Name = "VehicleCodeComboBox";
-            this.VehicleCodeComboBox.Size = new System.Drawing.Size(187, 21);
-            this.VehicleCodeComboBox.TabIndex = 27;
-            // 
-            // ClientCodeComboBox
-            // 
-            this.ClientCodeComboBox.FormattingEnabled = true;
-            this.ClientCodeComboBox.Location = new System.Drawing.Point(261, 163);
-            this.ClientCodeComboBox.Name = "ClientCodeComboBox";
-            this.ClientCodeComboBox.Size = new System.Drawing.Size(187, 21);
-            this.ClientCodeComboBox.TabIndex = 28;
-            // 
             // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(834, 461);
             this.Controls.Add(this.BodyPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Orders";
             this.Text = "Orders";
             this.Load += new System.EventHandler(this.Orders_Load);
@@ -320,7 +323,6 @@
         private System.Windows.Forms.Label InsurancePaymentLabel;
         private System.Windows.Forms.TextBox InsurancePaymentField;
         private System.Windows.Forms.Label PersonalLabel;
-        private new System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.PictureBox OrdersPicture;
         private System.Windows.Forms.Panel LeftPanel;
         private System.Windows.Forms.Label DeadlineLabel;
@@ -329,12 +331,13 @@
         private System.Windows.Forms.Label ReceiptDateLabel;
         private System.Windows.Forms.TextBox DeadlineField;
         private System.Windows.Forms.TextBox RepairCostField;
-        private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Label VehicleCodeLabel;
         private System.Windows.Forms.Label OrderCodeLabel;
         private System.Windows.Forms.TextBox ReceiptDateField;
         private System.Windows.Forms.ComboBox ClientCodeComboBox;
         private System.Windows.Forms.ComboBox VehicleCodeComboBox;
         private System.Windows.Forms.ComboBox OrderCodeComboBox;
+        private Guna.UI2.WinForms.Guna2Button AddButton;
+        private Guna.UI2.WinForms.Guna2Button CancelButton;
     }
 }

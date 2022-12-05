@@ -24,33 +24,7 @@ namespace Course_work.Orders
             conn = new MySqlConnection(connStr);
         }
         MySqlConnection conn;
-        private void AddButton_Click(object sender, EventArgs e)
-        {
-            string OrderCode = OrderCodeComboBox.Text;
-            string VehicleCode = VehicleCodeComboBox.Text;
-            string ClientCode = ClientCodeComboBox.Text;
-            string ReceiptDate = ReceiptDateField.Text;
-            string RepairCost = RepairCostField.Text;
-            string Deadline = DeadlineField.Text;
-            string InsurancePayment = InsurancePaymentField.Text;
-            string sql_update_current_car = $"INSERT INTO Orders ( OrderCode, VehicleCode, ClientCode, ReceiptDate, RepairCost, Deadline, InsurancePayment )" +
-                                            $"VALUES ('{OrderCode}', '{VehicleCode}', '{ClientCode}', '{ReceiptDate}', '{RepairCost}', '{Deadline}', '{InsurancePayment}')";
-            // устанавливаем соединение с БД
-            conn.Open();
-            // объект для выполнения SQL-запроса
-            MySqlCommand command = new MySqlCommand(sql_update_current_car, conn);
-            // выполняем запрос
-            command.ExecuteNonQuery();
-            // закрываем подключение к БД
-            conn.Close();
-            //Закрываем форму
-            this.Close();
-        }
-
-        private void CancelButton_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+       
         public void GetOrder()
         {
             DataTable list_table = new DataTable();
@@ -149,6 +123,34 @@ namespace Course_work.Orders
             {
                 conn.Close();
             }
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            string OrderCode = OrderCodeComboBox.Text;
+            string VehicleCode = VehicleCodeComboBox.Text;
+            string ClientCode = ClientCodeComboBox.Text;
+            string ReceiptDate = ReceiptDateField.Text;
+            string RepairCost = RepairCostField.Text;
+            string Deadline = DeadlineField.Text;
+            string InsurancePayment = InsurancePaymentField.Text;
+            string sql_update_current_car = $"INSERT INTO Orders ( OrderCode, VehicleCode, ClientCode, ReceiptDate, RepairCost, Deadline, InsurancePayment )" +
+                                            $"VALUES ('{OrderCode}', '{VehicleCode}', '{ClientCode}', '{ReceiptDate}', '{RepairCost}', '{Deadline}', '{InsurancePayment}')";
+            // устанавливаем соединение с БД
+            conn.Open();
+            // объект для выполнения SQL-запроса
+            MySqlCommand command = new MySqlCommand(sql_update_current_car, conn);
+            // выполняем запрос
+            command.ExecuteNonQuery();
+            // закрываем подключение к БД
+            conn.Close();
+            //Закрываем форму
+            this.Close();
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

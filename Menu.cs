@@ -474,9 +474,7 @@ namespace coursework
             this.Close();
             new Thread(() => Application.Run(new Auth())).Start();
         }
-
-        private void ClearButton_Click(object sender, EventArgs e) => reload_list();
-       
+  
         private void Menu_FormClosing(object sender, FormClosingEventArgs e) => Environment.Exit(0);
 
         private void DataGridView_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
@@ -490,5 +488,7 @@ namespace coursework
                 GetSelectedIDString();
             }
         }
+
+        private void ClearButton_Click(object sender, EventArgs e) => reload_list();
     }
 }

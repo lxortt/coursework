@@ -32,6 +32,9 @@
             this.HeaderPanel = new System.Windows.Forms.Panel();
             this.SingUpLabel = new System.Windows.Forms.Label();
             this.BodyPanel = new System.Windows.Forms.Panel();
+            this.FooterPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.EmailField = new System.Windows.Forms.TextBox();
             this.AuthLinkLabel = new System.Windows.Forms.LinkLabel();
             this.CreateButton = new System.Windows.Forms.Button();
             this.PhoneLabel = new System.Windows.Forms.Label();
@@ -39,22 +42,20 @@
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.LoginLabel = new System.Windows.Forms.Label();
             this.PhoneField = new System.Windows.Forms.TextBox();
-            this.EmailField = new System.Windows.Forms.TextBox();
             this.PasswordField = new System.Windows.Forms.TextBox();
             this.LoginField = new System.Windows.Forms.TextBox();
             this.CreatePicture = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.FooterPanel = new System.Windows.Forms.Panel();
             this.HeaderPanel.SuspendLayout();
             this.BodyPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CreatePicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.FooterPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatePicture)).BeginInit();
             this.SuspendLayout();
             // 
             // HeaderPanel
             // 
             this.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(26)))), ((int)(((byte)(33)))));
+            this.HeaderPanel.BackgroundImage = global::Course_work.Properties.Resources.Additional_Panel_Background;
             this.HeaderPanel.Controls.Add(this.SingUpLabel);
             this.HeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.HeaderPanel.Location = new System.Drawing.Point(0, 0);
@@ -77,7 +78,7 @@
             // 
             // BodyPanel
             // 
-            this.BodyPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BodyPanel.BackgroundImage")));
+            this.BodyPanel.BackgroundImage = global::Course_work.Properties.Resources.Additional_Background;
             this.BodyPanel.Controls.Add(this.FooterPanel);
             this.BodyPanel.Controls.Add(this.EmailField);
             this.BodyPanel.Controls.Add(this.AuthLinkLabel);
@@ -95,6 +96,38 @@
             this.BodyPanel.Name = "BodyPanel";
             this.BodyPanel.Size = new System.Drawing.Size(334, 416);
             this.BodyPanel.TabIndex = 0;
+            // 
+            // FooterPanel
+            // 
+            this.FooterPanel.BackColor = System.Drawing.Color.Transparent;
+            this.FooterPanel.Controls.Add(this.pictureBox1);
+            this.FooterPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.FooterPanel.Location = new System.Drawing.Point(0, 302);
+            this.FooterPanel.Name = "FooterPanel";
+            this.FooterPanel.Size = new System.Drawing.Size(334, 114);
+            this.FooterPanel.TabIndex = 35;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = global::Course_work.Properties.Resources.Saturn;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(72, -21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(190, 190);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
+            // EmailField
+            // 
+            this.EmailField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.EmailField.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.EmailField.Location = new System.Drawing.Point(117, 182);
+            this.EmailField.Name = "EmailField";
+            this.EmailField.Size = new System.Drawing.Size(100, 21);
+            this.EmailField.TabIndex = 6;
             // 
             // AuthLinkLabel
             // 
@@ -188,15 +221,6 @@
             this.PhoneField.Size = new System.Drawing.Size(100, 21);
             this.PhoneField.TabIndex = 7;
             // 
-            // EmailField
-            // 
-            this.EmailField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.EmailField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.EmailField.Location = new System.Drawing.Point(117, 182);
-            this.EmailField.Name = "EmailField";
-            this.EmailField.Size = new System.Drawing.Size(100, 21);
-            this.EmailField.TabIndex = 6;
-            // 
             // PasswordField
             // 
             this.PasswordField.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
@@ -230,29 +254,6 @@
             this.CreatePicture.TabIndex = 3;
             this.CreatePicture.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = global::Course_work.Properties.Resources.Saturn;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(72, -21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(190, 190);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 33;
-            this.pictureBox1.TabStop = false;
-            // 
-            // FooterPanel
-            // 
-            this.FooterPanel.BackColor = System.Drawing.Color.Transparent;
-            this.FooterPanel.Controls.Add(this.pictureBox1);
-            this.FooterPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.FooterPanel.Location = new System.Drawing.Point(0, 302);
-            this.FooterPanel.Name = "FooterPanel";
-            this.FooterPanel.Size = new System.Drawing.Size(334, 114);
-            this.FooterPanel.TabIndex = 35;
-            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,9 +269,9 @@
             this.HeaderPanel.PerformLayout();
             this.BodyPanel.ResumeLayout(false);
             this.BodyPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CreatePicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.FooterPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatePicture)).EndInit();
             this.ResumeLayout(false);
 
         }
