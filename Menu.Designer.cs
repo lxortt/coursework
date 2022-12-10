@@ -112,7 +112,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(354, 36);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(352, 36);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(156, 25);
             this.guna2HtmlLabel2.TabIndex = 44;
@@ -306,7 +306,7 @@
             this.SearchLabel.ForeColor = System.Drawing.Color.White;
             this.SearchLabel.Location = new System.Drawing.Point(760, 87);
             this.SearchLabel.Name = "SearchLabel";
-            this.SearchLabel.Size = new System.Drawing.Size(47, 16);
+            this.SearchLabel.Size = new System.Drawing.Size(48, 16);
             this.SearchLabel.TabIndex = 31;
             this.SearchLabel.Text = "Поиск";
             this.SearchLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;

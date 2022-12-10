@@ -62,5 +62,6 @@ namespace coursework
             this.Close();
             new Thread(() => Application.Run(new Auth())).Start();
         }
+
     }
 }
